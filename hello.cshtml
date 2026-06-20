@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kết quả Tra cứu - MediAI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        /* Custom pattern for low-fidelity image placeholders */
+        .img-placeholder-pattern {
+            background-color: #F5F5F5;
+            background-image: 
+                linear-gradient(45deg, transparent 49.5%, #E0E0E0 49.5%, #E0E0E0 50.5%, transparent 50.5%),
+                linear-gradient(-45deg, transparent 49.5%, #E0E0E0 49.5%, #E0E0E0 50.5%, transparent 50.5%);
+            background-size: 100% 100%;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-primary-fixed-variant": "#474746",
+                        "background": "#f9f9f9",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#858383",
+                        "surface-dim": "#dadada",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed": "#e5e2e1",
+                        "on-secondary-container": "#646464",
+                        "tertiary-container": "#1a1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "secondary": "#5e5e5e",
+                        "error": "#ba1a1a",
+                        "tertiary": "#000000",
+                        "inverse-primary": "#c8c6c5",
+                        "secondary-fixed": "#e3e2e2",
+                        "surface-container-low": "#f3f3f3",
+                        "on-tertiary-container": "#838484",
+                        "primary": "#000000",
+                        "outline-variant": "#c4c7c7",
+                        "on-surface": "#1a1c1c",
+                        "primary-container": "#1c1b1b",
+                        "outline": "#747878",
+                        "surface": "#f9f9f9",
+                        "on-secondary-fixed-variant": "#464747",
+                        "surface-container-highest": "#e2e2e2",
+                        "secondary-container": "#e3e2e2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#5f5e5e",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-bright": "#f9f9f9",
+                        "surface-variant": "#e2e2e2",
+                        "on-surface-variant": "#444748",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-background": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Be Vietnam Pro"],
+                        "body-sm": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Be Vietnam Pro"],
+                        "headline-md": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Be Vietnam Pro"],
+                        "headline-sm": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["30px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- Header Section -->
+<header class="w-full h-16 bg-surface-container-lowest border-b border-outline-variant sticky top-0 z-50">
+<div class="flex justify-between items-center max-w-[1140px] mx-auto px-margin-desktop h-full">
+<div class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">MediAI</div>
+<nav class="hidden md:flex items-center gap-md h-full">
+<a class="text-on-surface-variant font-body-md hover:bg-surface-container-low transition-colors duration-200 px-sm h-full flex items-center" href="#">Trang chủ</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 h-full flex items-center" href="#">Dự đoán</a>
+<a class="text-on-surface-variant font-body-md hover:bg-surface-container-low transition-colors duration-200 px-sm h-full flex items-center" href="#">Tra cứu thuốc</a>
+<a class="text-on-surface-variant font-body-md hover:bg-surface-container-low transition-colors duration-200 px-sm h-full flex items-center" href="#">Giới thiệu</a>
+</nav>
+<div class="flex items-center gap-sm">
+<button class="px-md py-xs font-label-md text-label-md text-secondary border border-outline hover:bg-surface-container-low transition-colors">Đăng nhập</button>
+<button class="px-md py-xs font-label-md text-label-md bg-primary text-on-primary hover:opacity-90 transition-opacity">Đăng ký</button>
+</div>
+</div>
+</header>
+<!-- Top Summary Bar -->
+<section class="bg-surface-container-low border-b border-outline-variant py-md">
+<div class="max-w-[1140px] mx-auto px-margin-desktop flex flex-wrap items-center gap-md">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-on-surface-variant" style="font-size: 20px;">person</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Thông tin:</span>
+</div>
+<div class="flex gap-sm">
+<div class="px-sm py-1 bg-surface border border-outline-variant rounded-lg font-body-sm text-body-sm">Tuổi: 28</div>
+<div class="px-sm py-1 bg-surface border border-outline-variant rounded-lg font-body-sm text-body-sm">Giới tính: Nam</div>
+<div class="px-sm py-1 bg-surface border border-outline-variant rounded-lg font-body-sm text-body-sm">Dị ứng: Penicillin</div>
+<div class="px-sm py-1 bg-surface border border-outline-variant rounded-lg font-body-sm text-body-sm">Triệu chứng: Ho, sốt</div>
+</div>
+<button class="ml-auto flex items-center gap-xs text-primary font-label-md text-label-md hover:underline">
+<span class="material-symbols-outlined" style="font-size: 16px;">edit</span>
+                CHỈNH SỬA
+            </button>
+</div>
+</section>
+<!-- Main Layout Container -->
+<main class="max-w-[1140px] mx-auto px-margin-desktop py-lg flex gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-64 flex-shrink-0">
+<div class="space-y-lg">
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest text-on-surface mb-md">Bộ lọc kết quả</h3>
+<!-- Filter Group: Age -->
+<div class="mb-md">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs">ĐỐI TƯỢNG</label>
+<div class="space-y-xs">
+<label class="flex items-center gap-xs cursor-pointer">
+<input class="w-4 h-4 border-outline rounded-none text-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm">Trẻ em</span>
+</label>
+<label class="flex items-center gap-xs cursor-pointer">
+<input checked="" class="w-4 h-4 border-outline rounded-none text-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm">Người trưởng thành</span>
+</label>
+<label class="flex items-center gap-xs cursor-pointer">
+<input class="w-4 h-4 border-outline rounded-none text-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm">Người cao tuổi</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Ingredients -->
+<div class="mb-md">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs">THÀNH PHẦN</label>
+<select class="w-full h-12 border border-outline-variant bg-surface px-sm font-body-sm text-body-sm focus:outline-none focus:border-primary">
+<option>Tất cả thành phần</option>
+<option>Paracetamol</option>
+<option>Ibuprofen</option>
+<option>Amoxicillin</option>
+</select>
+</div>
+<!-- Filter Group: Manufacturer -->
+<div class="mb-md">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs">NHÀ SẢN XUẤT</label>
+<div class="space-y-xs">
+<label class="flex items-center gap-xs cursor-pointer">
+<input class="w-4 h-4 border-outline text-primary focus:ring-0" name="manuf" type="radio"/>
+<span class="font-body-sm text-body-sm">Nội địa</span>
+</label>
+<label class="flex items-center gap-xs cursor-pointer">
+<input class="w-4 h-4 border-outline text-primary focus:ring-0" name="manuf" type="radio"/>
+<span class="font-body-sm text-body-sm">Nhập khẩu</span>
+</label>
+<label class="flex items-center gap-xs cursor-pointer">
+<input checked="" class="w-4 h-4 border-outline text-primary focus:ring-0" name="manuf" type="radio"/>
+<span class="font-body-sm text-body-sm">Tất cả</span>
+</label>
+</div>
+</div>
+</div>
+<button class="w-full py-sm border border-primary text-primary font-label-md text-label-md hover:bg-surface-container-low transition-colors">
+                    XÓA TẤT CẢ BỘ LỌC
+                </button>
+</div>
+</aside>
+<!-- Content Area: Grid of Drugs -->
+<section class="flex-1">
+<div class="flex justify-between items-baseline mb-md">
+<h2 class="font-headline-sm text-headline-sm">Kết quả tìm thấy (12)</h2>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Sắp xếp theo: <span class="text-primary font-bold">Phổ biến</span></div>
+</div>
+<!-- Drug Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md flex flex-col hover:border-primary transition-colors group">
+<div class="w-full aspect-square img-placeholder-pattern border border-outline-variant mb-md relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center text-outline opacity-20">
+<span class="material-symbols-outlined" style="font-size: 48px;">medication</span>
+</div>
+</div>
+<div class="flex-1">
+<div class="mb-xs">
+<span class="inline-block px-2 py-0.5 border border-outline text-[10px] font-bold tracking-tighter uppercase mb-xs">AN TOÀN</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-xs">Panadol Extra</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-xs">Thành phần: Paracetamol, Caffeine</p>
+<p class="font-label-sm text-label-sm text-secondary">Liều lượng: 500mg/65mg</p>
+</div>
+<div class="mt-md pt-md border-t border-outline-variant">
+<button class="w-full py-xs border border-primary bg-primary text-on-primary font-label-md text-label-md hover:opacity-90">XEM CHI TIẾT</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md flex flex-col hover:border-primary transition-colors group">
+<div class="w-full aspect-square img-placeholder-pattern border border-outline-variant mb-md relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center text-outline opacity-20">
+<span class="material-symbols-outlined" style="font-size: 48px;">medication</span>
+</div>
+</div>
+<div class="flex-1">
+<div class="mb-xs">
+<span class="inline-block px-2 py-0.5 border border-error text-error text-[10px] font-bold tracking-tighter uppercase mb-xs">CẦN LƯU Ý</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-xs">Aspirin 81</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-xs">Thành phần: Acetylsalicylic Acid</p>
+<p class="font-label-sm text-label-sm text-secondary">Liều lượng: 81mg</p>
+</div>
+<div class="mt-md pt-md border-t border-outline-variant">
+<button class="w-full py-xs border border-primary bg-primary text-on-primary font-label-md text-label-md hover:opacity-90">XEM CHI TIẾT</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md flex flex-col hover:border-primary transition-colors group">
+<div class="w-full aspect-square img-placeholder-pattern border border-outline-variant mb-md relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center text-outline opacity-20">
+<span class="material-symbols-outlined" style="font-size: 48px;">medication</span>
+</div>
+</div>
+<div class="flex-1">
+<div class="mb-xs">
+<span class="inline-block px-2 py-0.5 border border-outline text-[10px] font-bold tracking-tighter uppercase mb-xs">AN TOÀN</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-xs">Hapacol 650</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-xs">Thành phần: Paracetamol</p>
+<p class="font-label-sm text-label-sm text-secondary">Liều lượng: 650mg</p>
+</div>
+<div class="mt-md pt-md border-t border-outline-variant">
+<button class="w-full py-xs border border-primary bg-primary text-on-primary font-label-md text-label-md hover:opacity-90">XEM CHI TIẾT</button>
+</div>
+</div>
+<!-- Card 4 (Placeholder) -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md flex flex-col hover:border-primary transition-colors group">
+<div class="w-full aspect-square img-placeholder-pattern border border-outline-variant mb-md relative overflow-hidden"></div>
+<div class="flex-1">
+<div class="mb-xs">
+<span class="inline-block px-2 py-0.5 border border-outline text-[10px] font-bold tracking-tighter uppercase mb-xs">AN TOÀN</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-xs">Decolgen ND</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-xs">Thành phần: Phenylephrine HCl</p>
+<p class="font-label-sm text-label-sm text-secondary">Liều lượng: 10mg</p>
+</div>
+<div class="mt-md pt-md border-t border-outline-variant">
+<button class="w-full py-xs border border-primary bg-primary text-on-primary font-label-md text-label-md hover:opacity-90">XEM CHI TIẾT</button>
+</div>
+</div>
+<!-- Card 5 (Placeholder) -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md flex flex-col hover:border-primary transition-colors group">
+<div class="w-full aspect-square img-placeholder-pattern border border-outline-variant mb-md relative overflow-hidden"></div>
+<div class="flex-1">
+<div class="mb-xs">
+<span class="inline-block px-2 py-0.5 border border-error text-error text-[10px] font-bold tracking-tighter uppercase mb-xs">CẦN LƯU Ý</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-xs">Ameflu DayTime</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-xs">Thành phần: Multi-ingredient</p>
+<p class="font-label-sm text-label-sm text-secondary">Liều lượng: Standard</p>
+</div>
+<div class="mt-md pt-md border-t border-outline-variant">
+<button class="w-full py-xs border border-primary bg-primary text-on-primary font-label-md text-label-md hover:opacity-90">XEM CHI TIẾT</button>
+</div>
+</div>
+<!-- Card 6 (Placeholder) -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md flex flex-col hover:border-primary transition-colors group">
+<div class="w-full aspect-square img-placeholder-pattern border border-outline-variant mb-md relative overflow-hidden"></div>
+<div class="flex-1">
+<div class="mb-xs">
+<span class="inline-block px-2 py-0.5 border border-outline text-[10px] font-bold tracking-tighter uppercase mb-xs">AN TOÀN</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-xs">Berberin BM</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-xs">Thành phần: Berberin Chloride</p>
+<p class="font-label-sm text-label-sm text-secondary">Liều lượng: 10mg</p>
+</div>
+<div class="mt-md pt-md border-t border-outline-variant">
+<button class="w-full py-xs border border-primary bg-primary text-on-primary font-label-md text-label-md hover:opacity-90">XEM CHI TIẾT</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-xl flex justify-center items-center gap-sm">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-outline hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 border border-primary bg-primary text-on-primary font-bold">1</button>
+<button class="w-10 h-10 border border-outline-variant text-on-surface hover:border-primary transition-colors">2</button>
+<button class="w-10 h-10 border border-outline-variant text-on-surface hover:border-primary transition-colors">3</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-outline hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Bottom Grayscale Warning Banner -->
+<aside class="bg-surface-container-highest border-t border-b border-outline-variant py-md">
+<div class="max-w-[1140px] mx-auto px-margin-desktop flex items-start gap-md">
+<div class="flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-on-surface" style="font-size: 32px;">warning</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md uppercase tracking-widest text-on-surface mb-xs">CẢNH BÁO Y TẾ QUAN TRỌNG</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Kết quả từ MediAI chỉ mang tính chất tham khảo dựa trên dữ liệu hiện có. Hệ thống không thay thế các chẩn đoán chuyên môn từ bác sĩ. Người dùng tuyệt đối không tự ý thay đổi lộ trình điều trị hoặc sử dụng thuốc mà không có chỉ định y khoa. Trong trường hợp khẩn cấp, hãy liên hệ ngay với cơ sở y tế gần nhất.
+                </p>
+</div>
+</div>
+</aside>
+<!-- Footer Section -->
+<footer class="w-full py-lg bg-surface-container border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1140px] mx-auto px-margin-desktop gap-md">
+<div class="flex flex-col gap-xs items-center md:items-start">
+<div class="font-headline-sm text-headline-sm text-on-surface uppercase">MediAI</div>
+<p class="font-label-md text-label-md text-on-surface-variant">© 2024 MediAI Medical Systems. All rights reserved. Clinical use only.</p>
+</div>
+<nav class="flex flex-wrap justify-center gap-md">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Chính sách bảo mật</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Điều khoản sử dụng</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Liên hệ hệ thống</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Tài liệu API</a>
+</nav>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for filter toggles
+        document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(input => {
+            input.addEventListener('change', function() {
+                // Mimic a loading state in a low-fi way
+                const contentGrid = document.querySelector('.grid');
+                contentGrid.style.opacity = '0.5';
+                setTimeout(() => {
+                    contentGrid.style.opacity = '1';
+                }, 300);
+            });
+        });
+
+        // Hover effect for drug cards
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>
