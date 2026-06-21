@@ -1,0 +1,171 @@
+2026-06-21 23:20:18,684 - main - INFO - === Logging system initialized ===
+2026-06-21 23:20:18,684 - main - INFO - Log file: logs/app_20260621_232018.log
+2026-06-21 23:20:18,684 - main - INFO - Log level: INFO
+2026-06-21 23:20:18,684 - main - INFO - Timestamp: 20260621_232018
+2026-06-21 23:20:19,137 - main - INFO - Included router: routers.aihub.router
+2026-06-21 23:20:19,153 - main - INFO - Included router: routers.auth.router
+2026-06-21 23:20:19,161 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-21 23:20:19,175 - main - INFO - Included router: routers.diseases.router
+2026-06-21 23:20:19,210 - main - INFO - Included router: routers.drugs.router
+2026-06-21 23:20:19,210 - main - INFO - Included router: routers.health.router
+2026-06-21 23:20:19,210 - main - INFO - Included router: routers.openfda.router
+2026-06-21 23:20:19,210 - main - INFO - Included router: routers.predict.router
+2026-06-21 23:20:19,229 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-21 23:20:19,246 - main - INFO - Included router: routers.settings.router
+2026-06-21 23:20:19,268 - main - INFO - Included router: routers.storage.router
+2026-06-21 23:20:19,272 - main - INFO - Included router: routers.user.router
+2026-06-21 23:20:19,272 - main - INFO - === Application startup initiated ===
+2026-06-21 23:20:19,272 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-21 23:20:19,272 - services.database - INFO - Starting database initialization...
+2026-06-21 23:20:19,272 - core.database - INFO - Starting database initialization...
+2026-06-21 23:20:19,272 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-06-21 23:20:19,272 - core.database - INFO - Creating database engine: mssql+pymssql://sa:123456@localhost:1433/medipredict
+2026-06-21 23:20:23,378 - core.database - INFO - Database 'medipredict' not found, attempting to create it...
+2026-06-21 23:20:27,441 - core.database - WARNING - Could not create database 'medipredict': (pymssql.exceptions.OperationalError) (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (localhost)\nNet-Lib error during Unknown error (10061)\nDB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (localhost)\nNet-Lib error during Unknown error (10061)\n')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-21 23:20:31,543 - core.database - WARNING - Failed to create database engine: (pymssql.exceptions.OperationalError) (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (localhost)\nNet-Lib error during Unknown error (10061)\nDB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (localhost)\nNet-Lib error during Unknown error (10061)\n')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-21 23:20:31,545 - core.database - WARNING - SQL Server unavailable, falling back to SQLite...
+2026-06-21 23:20:31,546 - core.database - INFO - Using SQLite fallback database: sqlite:///C:/Users/Asus vivobook/CNPM/App/backend/medipredict.db
+2026-06-21 23:20:31,547 - core.database - INFO - Creating database engine: sqlite:///C:/Users/Asus vivobook/CNPM/App/backend/medipredict.db
+2026-06-21 23:20:31,583 - core.database - INFO - Database engine and session maker created successfully
+2026-06-21 23:20:31,585 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-21 23:20:31,585 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-21 23:20:31,586 - core.database - INFO - Starting table creation...
+2026-06-21 23:20:31,590 - core.database - INFO - Tables initialized successfully
+2026-06-21 23:20:31,592 - core.database - DEBUG - [DB_OP] Create tables completed in 0.0072s
+2026-06-21 23:20:31,592 - services.database - INFO - Table creation completed
+2026-06-21 23:20:31,592 - services.database - INFO - Database initialized successfully
+2026-06-21 23:20:31,592 - services.database - DEBUG - [DB_OP] Database initialization completed in 12.3203s
+2026-06-21 23:20:31,592 - services.mock_data - INFO - Processing mock data file disease_drug_mappings.json for table disease_drug_mappings
+2026-06-21 23:20:31,609 - services.mock_data - INFO - Table disease_drug_mappings already has 12 rows; skipping mock insert
+2026-06-21 23:20:31,609 - services.mock_data - INFO - Processing mock data file diseases.json for table diseases
+2026-06-21 23:20:31,609 - services.mock_data - INFO - Table diseases already has 6 rows; skipping mock insert
+2026-06-21 23:20:31,609 - services.mock_data - INFO - Processing mock data file drugs.json for table drugs
+2026-06-21 23:20:31,624 - services.mock_data - INFO - Table drugs already has 8 rows; skipping mock insert
+2026-06-21 23:20:31,624 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-21 23:20:31,624 - services.database - INFO - Starting database initialization...
+2026-06-21 23:20:31,624 - core.database - INFO - Starting database initialization...
+2026-06-21 23:20:31,624 - core.database - INFO - Database already initialized
+2026-06-21 23:20:31,624 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-21 23:20:31,624 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-21 23:20:31,624 - core.database - INFO - Tables already initialized
+2026-06-21 23:20:31,624 - services.database - INFO - Table creation completed
+2026-06-21 23:20:31,624 - services.database - INFO - Database initialized successfully
+2026-06-21 23:20:31,624 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0000s
+2026-06-21 23:20:31,624 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-06-21 23:20:31,624 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-06-21 23:20:31,624 - main - INFO - === Application startup completed successfully ===
+2026-06-21 23:20:52,536 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=20, fields=None
+2026-06-21 23:20:52,546 - routers.diseases - DEBUG - Found 6 diseasess
+2026-06-21 23:21:15,798 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-21 23:21:15,798 - passlib.handlers.bcrypt - DEBUG - detected 'bcrypt' backend, version '<unknown>'
+2026-06-21 23:21:15,798 - passlib.handlers.bcrypt - DEBUG - 'bcrypt' backend lacks $2$ support, enabling workaround
+2026-06-21 23:21:16,196 - core.database - ERROR - Database session error: 401: Invalid email or password
+Traceback (most recent call last):
+  File "C:\Users\Asus vivobook\CNPM\App\backend\core\database.py", line 270, in get_db
+    yield session
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\fastapi\concurrency.py", line 29, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\fastapi\routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\fastapi\routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\fastapi\routing.py", line 346, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Asus vivobook\CNPM\App\backend\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus vivobook\CNPM\App\backend\routers\auth.py", line 41, in login
+    raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 401: Invalid email or password
+2026-06-21 23:21:21,263 - core.config - DEBUG - Read dynamic attribute jwt_expire_minutes from environment variable JWT_EXPIRE_MINUTES
+2026-06-21 23:21:21,263 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-06-21 23:21:21,263 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-06-21 23:21:21,280 - core.auth - DEBUG - Authentication token created for user hash: 3b599c17
+2026-06-21 23:21:21,629 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=20, fields=None
+2026-06-21 23:21:21,629 - routers.diseases - DEBUG - Found 6 diseasess
+2026-06-21 23:21:22,704 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=20, fields=None
+2026-06-21 23:21:22,706 - routers.diseases - DEBUG - Found 6 diseasess
+2026-06-21 23:21:42,990 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:21:42,999 - routers.drugs - DEBUG - Found 8 drugss
+2026-06-21 23:21:50,733 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:21:50,949 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001A826B8E990>
+2026-06-21 23:21:50,949 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A826B5DDD0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:21:51,391 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001A8269E6270>
+2026-06-21 23:21:51,392 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:21:51,393 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:21:51,394 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:21:51,395 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:21:51,395 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:21:51,686 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Date', b'Sun, 21 Jun 2026 16:21:51 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"50-Gov3eVBQAYPDbwMSq8YtHKLjrHw"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutbugc0r555g0a77fjg'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'239'), (b'X-Vcap-Request-Id', b'3c00ad3b-49b5-44ee-7776-08bdcd4e3ca5'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny'), (b'Content-Encoding', b'gzip')])
+2026-06-21 23:21:51,688 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Asdsdf+OR+openfda.generic_name%3Asdsdf&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 404 Not Found"
+2026-06-21 23:21:51,688 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:21:51,691 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:21:51,693 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:21:51,695 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:21:51,696 - services.openfda - ERROR - openFDA HTTP error: 404 - {
+  "error": {
+    "code": "NOT_FOUND",
+    "message": "No matches found!"
+  }
+}
+2026-06-21 23:21:51,696 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:21:51,698 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:21:55,163 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:21:55,350 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001A826BBDA90>
+2026-06-21 23:21:55,350 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A826B5EBD0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:21:55,951 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:21:56,153 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001A8269E66F0>
+2026-06-21 23:21:56,153 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:21:56,153 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:21:56,153 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:21:56,153 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:21:56,153 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:21:56,153 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001A826BBF7A0>
+2026-06-21 23:21:56,153 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A826B5F450> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:21:56,552 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001A826BBE750>
+2026-06-21 23:21:56,552 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:21:56,552 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:21:56,552 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:21:56,556 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:21:56,556 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:21:56,683 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:21:56 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'1'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1bf5c-BgOy9kvwzzol8uHhlXTFX/9aN8A"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Ap%20OR%20openfda.generic_name%3Ap&search_after=0%3D41ade439-59f2-dfd1-e063-6294a90aca0f>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutbuhh7d9ls4ogb37m0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'238'), (b'X-Vcap-Request-Id', b'2798e6f0-fd27-4418-581c-27ef510daf32'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:21:56,683 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Ap+OR+openfda.generic_name%3Ap&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:21:56,683 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:21:56,683 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:21:56,683 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:21:56,683 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:21:56,699 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:21:56,699 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:21:56,835 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:21:56 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"be47-zTGr+RLUwe8Ilm9mKKUsoxUHWtU"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutbuhk8o7n4etqnh280'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'238'), (b'X-Vcap-Request-Id', b'b1aa6aab-6f32-4823-74a9-46654f450610'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:21:56,835 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Apa+OR+openfda.generic_name%3Apa&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:21:56,835 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:21:56,835 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:21:56,835 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:21:56,835 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:21:56,835 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:21:56,835 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:22:33,318 - routers.predict - INFO - Prediction request: symptoms=tiền đình, disease_name=tiền đình
+2026-06-21 23:22:33,328 - core.config - DEBUG - Read dynamic attribute app_ai_base_url from environment variable APP_AI_BASE_URL
+2026-06-21 23:22:33,328 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:22:33,328 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:24:01,707 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=20, fields=None
+2026-06-21 23:24:01,707 - routers.diseases - DEBUG - Found 6 diseasess

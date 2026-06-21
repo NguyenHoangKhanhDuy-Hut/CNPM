@@ -16,6 +16,8 @@ import AdminDashboard from './pages/AdminDashboard';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import AccountPage from './pages/AccountPage';
+import AIChat from './pages/AIChat';
+import Layout from '@/components/Layout';
 
 const queryClient = new QueryClient();
 
@@ -31,6 +33,7 @@ const AppRoutes = () => (
     <Route path="/account" element={<ProtectedRoute><AccountPage /></ProtectedRoute>} />
     <Route path="/login" element={<LoginPage />} />
     <Route path="/register" element={<RegisterPage />} />
+    <Route path="/ai-chat" element={<AIChat />} />
   </Routes>
 );
 
@@ -39,11 +42,19 @@ const App = () => (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <TooltipProvider>
         <Toaster />
-        <BrowserRouter>
-          <AuthProvider>
-            <AppRoutes />
-          </AuthProvider>
-        </BrowserRouter>
+       <BrowserRouter>
+
+  <AuthProvider>
+
+    
+
+      <AppRoutes />
+
+    
+
+  </AuthProvider>
+
+</BrowserRouter>
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>

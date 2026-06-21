@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Activity, Menu, X, LogOut, User } from 'lucide-react';
+import {Activity,Menu,X,LogOut,User,Bot} from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 
 const Header = () => {
@@ -8,13 +8,17 @@ const Header = () => {
   const location = useLocation();
   const { user, logout } = useAuth();
 
-  const navLinks = [
-    { label: 'Trang chủ', path: '/' },
-    { label: 'Tra cứu bệnh', path: '/search' },
-    { label: 'Thuốc', path: '/drugs' },
-    { label: 'Dự đoán AI', path: '/predict' },
-  ];
+ const navLinks = [
+  { label: 'Trang chủ', path: '/' },
 
+  { label: 'Tra cứu bệnh', path: '/search' },
+
+  { label: 'Thuốc', path: '/drugs' },
+
+  { label: 'Dự đoán AI', path: '/predict' },
+
+  { label: '🤖 MediPredict AI', path: '/ai-chat' },
+];
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
