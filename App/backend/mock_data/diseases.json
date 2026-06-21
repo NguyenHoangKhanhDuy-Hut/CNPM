@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Cảm cúm",
+        "group_name": "Hô hấp",
+        "risk_level": "low",
+        "icon": "🤧",
+        "description": "Bệnh nhiễm virus cấp tính đường hô hấp, thường tự khỏi sau 7-10 ngày với điều trị triệu chứng",
+        "symptoms": "Sốt,Ho,Đau họng,Mệt mỏi,Nghẹt mũi,Đau đầu",
+        "causes": "Virus cúm A/B/C lây qua đường hô hấp,Tiếp xúc với người bệnh,Hệ miễn dịch suy yếu",
+        "diagnosis": "Xét nghiệm nhanh cúm,PCR virus cúm,Khám lâm sàng",
+        "treatment": "Nghỉ ngơi,Uống nhiều nước,Thuốc hạ sốt,Thuốc kháng virus nếu nặng"
+    },
+    {
+        "name": "Tiểu đường",
+        "group_name": "Nội tiết",
+        "risk_level": "high",
+        "icon": "🩸",
+        "description": "Rối loạn chuyển hóa đường trong máu mạn tính, ảnh hưởng đến hàng triệu người trên toàn cầu",
+        "symptoms": "Khát nước,Tiểu nhiều,Mệt mỏi,Giảm cân,Mờ mắt,Vết thương lâu lành",
+        "causes": "Thiếu hụt insulin,Kháng insulin,Di truyền,Thừa cân,Ít vận động",
+        "diagnosis": "Xét nghiệm đường huyết lúc đói (FPG),Xét nghiệm HbA1c,Nghiệm pháp dung nạp glucose (OGTT)",
+        "treatment": "Kiểm soát chế độ ăn,Tập thể dục,Thuốc Metformin,Insulin nếu cần"
+    },
+    {
+        "name": "Cao huyết áp",
+        "group_name": "Tim mạch",
+        "risk_level": "high",
+        "icon": "💗",
+        "description": "Áp lực máu trong động mạch tăng cao bất thường, nguy cơ đột quỵ và nhồi máu cơ tim",
+        "symptoms": "Đau đầu,Chóng mặt,Khó thở,Đau ngực,Mờ mắt,Mệt mỏi",
+        "causes": "Thừa cân,Ăn mặn,Stress,Di truyền,Ít vận động,Hút thuốc",
+        "diagnosis": "Đo huyết áp nhiều lần,Holter huyết áp 24h,Xét nghiệm máu,Siêu âm tim",
+        "treatment": "Giảm muối,Tập thể dục,Thuốc hạ áp,Kiểm soát cân nặng"
+    },
+    {
+        "name": "Hen suyễn",
+        "group_name": "Hô hấp",
+        "risk_level": "medium",
+        "icon": "🫁",
+        "description": "Bệnh viêm mạn tính đường hô hấp gây co thắt phế quản và khó thở",
+        "symptoms": "Khó thở,Thở khò khè,Ho đêm,Tức ngực,Ho khi gắng sức",
+        "causes": "Dị ứng,Ô nhiễm không khí,Nhiễm trùng hô hấp,Di truyền,Khói thuốc",
+        "diagnosis": "Đo chức năng hô hấp,Test phục hồi phế quản,Đo NO thở ra,X-quang phổi",
+        "treatment": "Thuốc giãn phế quản,Corticoid hít,Tránh tác nhân gây dị ứng,Kế hoạch hành động hen"
+    },
+    {
+        "name": "Covid-19",
+        "group_name": "Truyền nhiễm",
+        "risk_level": "high",
+        "icon": "🦠",
+        "description": "Bệnh nhiễm trùng đường hô hấp do SARS-CoV-2 gây ra, có thể gây biến chứng nặng",
+        "symptoms": "Sốt,Ho khan,Mất vị giác,Khó thở,Đau cơ,Mệt mỏi",
+        "causes": "Virus SARS-CoV-2,Lây qua giọt bắn,Tiếp xúc gần,Không gian kín",
+        "diagnosis": "Test nhanh kháng nguyên,PCR SARS-CoV-2,CT phổi,Xét nghiệm máu",
+        "treatment": "Cách ly,Điều trị triệu chứng,Thuốc kháng virus,Hỗ trợ hô hấp nếu nặng"
+    },
+    {
+        "name": "Viêm họng",
+        "group_name": "Hô hấp",
+        "risk_level": "low",
+        "icon": "😮",
+        "description": "Viêm niêm mạc họng do vi khuẩn hoặc virus, phổ biến vào mùa lạnh",
+        "symptoms": "Đau họng,Sốt nhẹ,Khó nuốt,Sưng hạch,Ho,Khàn tiếng",
+        "causes": "Vi khuẩn liên cầu,Virus,Thay đổi thời tiết,Hít khói bụi,Trào ngược dạ dày",
+        "diagnosis": "Khám họng,Cấy dịch họng,Test nhanh liên cầu,Xét nghiệm máu",
+        "treatment": "Kháng sinh nếu do vi khuẩn,Thuốc giảm đau,Súc họng,Nghỉ ngơi"
+    }
+]
