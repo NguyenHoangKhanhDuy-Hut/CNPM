@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import { format } from 'date-fns';
 import { vi } from 'date-fns/locale';
-import { User, Mail, Shield, Calendar, LogOut, Save, Loader2 } from 'lucide-react';
+import { User, Mail, Shield, Calendar, LogOut, Save, Loader2, Bookmark, Trash2 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { api } from '@/lib/client';
 import Header from '@/components/Header';
@@ -31,6 +31,30 @@ const AccountPage = () => {
   const [name, setName] = useState(user?.name || '');
   const [saving, setSaving] = useState(false);
   const [success, setSuccess] = useState('');
+  const [savedDrugs, setSavedDrugs] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchSavedDrugs = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) return;
+        const res = await api.get('/api/v1/user/saved-drugs');
+        setSavedDrugs(res.data?.items || []);
+      } catch (err) {
+        console.error('Failed to fetch saved drugs:', err);
+      }
+    };
+    fetchSavedDrugs();
+  }, []);
+
+  const handleUnsave = async (drugId: number) => {
+    try {
+      await api.delete(`/api/v1/user/saved-drugs/${drugId}`);
+      setSavedDrugs((prev) => prev.filter((item) => item.drug_id !== drugId));
+    } catch {
+      console.error('Failed to unsave drug');
+    }
+  };
 
   const handleSaveName = async () => {
     if (!name.trim() || name === user?.name) return;
@@ -143,6 +167,39 @@ const AccountPage = () => {
                   <p className="text-sm text-green-600">{success}</p>
                 )}
               </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base flex items-center gap-2">
+                <Bookmark className="h-4 w-4 text-blue-600" />
+                Thuốc đã lưu
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {savedDrugs.length === 0 ? (
+                <p className="text-sm text-slate-500">Chưa có thuốc nào được lưu</p>
+              ) : (
+                <div className="space-y-2">
+                  {savedDrugs.map((item) => (
+                    <div key={item.id} className="flex items-center justify-between py-2 border-b border-slate-100 last:border-0">
+                      <Link
+                        to={`/drug/${item.drug_id}`}
+                        className="text-sm font-medium text-blue-600 hover:underline"
+                      >
+                        {item.drug_name || `Thuốc #${item.drug_id}`}
+                      </Link>
+                      <button
+                        onClick={() => handleUnsave(item.drug_id)}
+                        className="text-slate-400 hover:text-red-500 transition-colors"
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
             </CardContent>
           </Card>
 

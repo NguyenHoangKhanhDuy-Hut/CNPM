@@ -15,9 +15,11 @@ interface Drug {
 
 interface DrugCardProps {
   drug: Drug;
+  isSaved?: boolean;
+  onSaveToggle?: (drugId: number | string) => void;
 }
 
-const DrugCard = ({ drug }: DrugCardProps) => {
+const DrugCard = ({ drug, isSaved, onSaveToggle }: DrugCardProps) => {
   const rating = drug.rating || 0;
   const fullStars = Math.floor(rating);
 
@@ -68,8 +70,15 @@ const DrugCard = ({ drug }: DrugCardProps) => {
             >
               Xem chi tiết
             </Link>
-            <button className="h-8 w-8 border border-slate-200 rounded-lg flex items-center justify-center text-slate-400 hover:text-blue-600 hover:border-blue-300 transition-colors">
-              <Bookmark className="h-3.5 w-3.5" />
+            <button
+              onClick={() => onSaveToggle?.(drug.id)}
+              className={`h-8 w-8 border rounded-lg flex items-center justify-center transition-colors ${
+                isSaved
+                  ? 'border-blue-300 text-blue-600 bg-blue-50'
+                  : 'border-slate-200 text-slate-400 hover:text-blue-600 hover:border-blue-300'
+              }`}
+            >
+              <Bookmark className={`h-3.5 w-3.5 ${isSaved ? 'fill-blue-600' : ''}`} />
             </button>
           </div>
         </div>

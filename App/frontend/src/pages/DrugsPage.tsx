@@ -14,6 +14,7 @@ const DrugsPage = () => {
   const [fdaResults, setFdaResults] = useState<any[]>([]);
   const [fdaLoading, setFdaLoading] = useState(false);
   const [showFDAResults, setShowFDAResults] = useState(false);
+  const [savedIds, setSavedIds] = useState<Set<number>>(new Set());
 
   useEffect(() => {
     const fetchDrugs = async () => {
@@ -72,6 +73,34 @@ const DrugsPage = () => {
     }, 600);
     return () => clearTimeout(timer);
   }, [searchQuery, loading, searchFDA]);
+
+  useEffect(() => {
+    const fetchSaved = async () => {
+      try {
+        const res = await api.get('/api/v1/user/saved-drugs');
+        const items = res.data?.items || [];
+        setSavedIds(new Set(items.map((item: any) => item.drug_id)));
+      } catch {
+        // not logged in
+      }
+    };
+    fetchSaved();
+  }, []);
+
+  const toggleSaveDrug = async (drugId: number | string) => {
+    const numericId = Number(drugId);
+    try {
+      if (savedIds.has(numericId)) {
+        await api.delete(`/api/v1/user/saved-drugs/${numericId}`);
+        setSavedIds((prev) => { const next = new Set(prev); next.delete(numericId); return next; });
+      } else {
+        await api.post(`/api/v1/user/saved-drugs/${numericId}`);
+        setSavedIds((prev) => new Set(prev).add(numericId));
+      }
+    } catch {
+      console.error('Failed to toggle save drug');
+    }
+  };
 
   const groups = [...new Set(drugs.map((d) => d.group_name).filter(Boolean))];
 
@@ -184,7 +213,7 @@ const DrugsPage = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {filteredDrugs.map((drug) => (
-                <DrugCard key={drug.id} drug={drug} />
+                <DrugCard key={drug.id} drug={drug} isSaved={savedIds.has(Number(drug.id))} onSaveToggle={toggleSaveDrug} />
               ))}
             </div>
           </>
