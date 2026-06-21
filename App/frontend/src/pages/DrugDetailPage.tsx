@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ChevronLeft, Star, Bookmark, Download, AlertTriangle, Pill, Activity, Shield, ExternalLink } from 'lucide-react';
+import { ChevronLeft, Star, Bookmark, RefreshCw, AlertTriangle, Activity, Shield, ExternalLink } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import client from '@/lib/client';
@@ -14,6 +14,7 @@ const DrugDetailPage = () => {
   const [fdaLoading, setFdaLoading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('overview');
+  const [isSaved, setIsSaved] = useState(false);
 
   useEffect(() => {
     const fetchDrug = async () => {
@@ -30,14 +31,15 @@ const DrugDetailPage = () => {
     fetchDrug();
   }, [id]);
 
-  const fetchFDAData = async (drugData: any) => {
-    if (!drugData) return;
+  const fetchFDAData = async (drugData?: any) => {
+    const target = drugData || drug;
+    if (!target) return;
     setFdaLoading(true);
     try {
       const res = await api.get('/api/v1/openfda/enrich', {
         params: {
-          brand_name: drugData.name || '',
-          generic_name: drugData.component || '',
+          brand_name: target.name || '',
+          generic_name: target.component || '',
         },
         timeout: 15000,
       });
@@ -48,6 +50,34 @@ const DrugDetailPage = () => {
       setFdaLoading(false);
     }
   };
+
+  const checkSavedStatus = async () => {
+    try {
+      const res = await api.get('/api/v1/user/saved-drugs');
+      const savedItems = res.data?.items || [];
+      setIsSaved(savedItems.some((item: any) => item.drug_id === Number(id)));
+    } catch {
+      // not logged in or error
+    }
+  };
+
+  const toggleSaveDrug = async () => {
+    try {
+      if (isSaved) {
+        await api.delete(`/api/v1/user/saved-drugs/${id}`);
+        setIsSaved(false);
+      } else {
+        await api.post(`/api/v1/user/saved-drugs/${id}`);
+        setIsSaved(true);
+      }
+    } catch {
+      console.error('Failed to toggle save drug');
+    }
+  };
+
+  useEffect(() => {
+    checkSavedStatus();
+  }, [id]);
 
   if (loading) {
     return (
@@ -105,11 +135,24 @@ const DrugDetailPage = () => {
                   <p className="text-slate-500 mt-1">{drug.manufacturer} · Mã: {drug.code}</p>
                 </div>
                 <div className="flex gap-2">
-                  <button className="h-10 px-5 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition-colors flex items-center gap-2">
-                    <Bookmark className="h-4 w-4" /> Lưu thuốc
+                  <button
+                    onClick={toggleSaveDrug}
+                    className={`h-10 px-5 font-medium rounded-xl transition-colors flex items-center gap-2 ${
+                      isSaved
+                        ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
+                        : 'bg-blue-600 text-white hover:bg-blue-700'
+                    }`}
+                  >
+                    <Bookmark className={`h-4 w-4 ${isSaved ? 'fill-blue-700' : ''}`} />
+                    {isSaved ? 'Đã lưu' : 'Lưu thuốc'}
                   </button>
-                  <button className="h-10 w-10 border border-slate-200 rounded-xl flex items-center justify-center text-slate-400 hover:text-blue-600 hover:border-blue-300 transition-colors">
-                    <Download className="h-4 w-4" />
+                  <button
+                    onClick={() => fetchFDAData(drug)}
+                    disabled={fdaLoading}
+                    className="h-10 w-10 border border-slate-200 rounded-xl flex items-center justify-center text-slate-400 hover:text-blue-600 hover:border-blue-300 transition-colors"
+                    title="Tải lại dữ liệu FDA"
+                  >
+                    <RefreshCw className={`h-4 w-4 ${fdaLoading ? 'animate-spin' : ''}`} />
                   </button>
                 </div>
               </div>
