@@ -1,0 +1,26 @@
+{
+    "title": "disease_drug_mappings",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "disease_id": {
+            "type": "integer"
+        },
+        "drug_id": {
+            "type": "integer"
+        },
+        "priority": {
+            "type": "integer"
+        },
+        "match_score": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "disease_id",
+        "drug_id",
+        "priority"
+    ]
+}
