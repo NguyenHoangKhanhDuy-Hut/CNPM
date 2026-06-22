@@ -1,0 +1,73 @@
+2026-06-22 11:09:33,013 - main - INFO - === Logging system initialized ===
+2026-06-22 11:09:33,013 - main - INFO - Log file: logs/app_20260622_110933.log
+2026-06-22 11:09:33,014 - main - INFO - Log level: INFO
+2026-06-22 11:09:33,014 - main - INFO - Timestamp: 20260622_110933
+2026-06-22 11:09:33,530 - main - INFO - Included router: routers.aihub.router
+2026-06-22 11:09:33,539 - main - INFO - Included router: routers.auth.router
+2026-06-22 11:09:33,555 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-22 11:09:33,571 - main - INFO - Included router: routers.diseases.router
+2026-06-22 11:09:33,599 - main - INFO - Included router: routers.drugs.router
+2026-06-22 11:09:33,600 - main - INFO - Included router: routers.health.router
+2026-06-22 11:09:33,605 - main - INFO - Included router: routers.openfda.router
+2026-06-22 11:09:33,610 - main - INFO - Included router: routers.predict.router
+2026-06-22 11:09:33,626 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-22 11:09:33,634 - main - INFO - Included router: routers.settings.router
+2026-06-22 11:09:33,651 - main - INFO - Included router: routers.storage.router
+2026-06-22 11:09:33,655 - main - INFO - Included router: routers.user.router
+2026-06-22 11:09:33,659 - main - INFO - Included router: routers.user_saved_drugs.router
+2026-06-22 11:09:33,660 - main - INFO - === Application startup initiated ===
+2026-06-22 11:09:33,660 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-22 11:09:33,661 - services.database - INFO - Starting database initialization...
+2026-06-22 11:09:33,661 - core.database - INFO - Starting database initialization...
+2026-06-22 11:09:33,661 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-06-22 11:09:33,661 - core.database - INFO - Creating database engine: mssql+pymssql://sa:123456@localhost:1433/medipredict
+2026-06-22 11:09:33,860 - core.database - INFO - Database engine and session maker created successfully
+2026-06-22 11:09:33,861 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-22 11:09:33,861 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-22 11:09:33,861 - core.database - INFO - Starting table creation...
+2026-06-22 11:09:33,998 - core.database - INFO - Tables initialized successfully
+2026-06-22 11:09:33,998 - core.database - DEBUG - [DB_OP] Create tables completed in 0.1372s
+2026-06-22 11:09:33,998 - services.database - INFO - Table creation completed
+2026-06-22 11:09:33,998 - services.database - INFO - Database initialized successfully
+2026-06-22 11:09:33,998 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.3378s
+2026-06-22 11:09:33,999 - services.mock_data - INFO - Processing mock data file disease_drug_mappings.json for table disease_drug_mappings
+2026-06-22 11:09:34,011 - services.mock_data - INFO - Table disease_drug_mappings already has 648 rows (ORM check); skipping
+2026-06-22 11:09:34,012 - services.mock_data - INFO - Processing mock data file diseases.json for table diseases
+2026-06-22 11:09:34,021 - services.mock_data - INFO - Table diseases already has 216 rows (ORM check); skipping
+2026-06-22 11:09:34,022 - services.mock_data - INFO - Processing mock data file drugs.json for table drugs
+2026-06-22 11:09:34,032 - services.mock_data - INFO - Table drugs already has 224 rows (ORM check); skipping
+2026-06-22 11:09:34,033 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-22 11:09:34,033 - services.database - INFO - Starting database initialization...
+2026-06-22 11:09:34,033 - core.database - INFO - Starting database initialization...
+2026-06-22 11:09:34,033 - core.database - INFO - Database already initialized
+2026-06-22 11:09:34,034 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-22 11:09:34,034 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-22 11:09:34,034 - core.database - INFO - Tables already initialized
+2026-06-22 11:09:34,034 - services.database - INFO - Table creation completed
+2026-06-22 11:09:34,034 - services.database - INFO - Database initialized successfully
+2026-06-22 11:09:34,034 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0013s
+2026-06-22 11:09:34,034 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-06-22 11:09:34,034 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-06-22 11:09:34,040 - main - INFO - === Application startup completed successfully ===
+2026-06-22 11:09:40,425 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-06-22 11:09:40,425 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-06-22 11:09:40,437 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 11:09:40,438 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 11:09:40,452 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 11:09:42,064 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 11:09:42,079 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 11:09:43,344 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 11:09:43,376 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 11:09:43,413 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 11:09:46,510 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 11:09:46,813 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 11:09:46,896 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 11:09:47,504 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 11:09:47,515 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 11:09:48,476 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 11:09:48,484 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 11:09:53,006 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 11:09:53,015 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 11:09:53,652 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 11:09:53,957 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 11:09:53,967 - routers.drugs - DEBUG - Found 224 drugss

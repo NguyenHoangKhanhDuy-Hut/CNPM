@@ -1,0 +1,517 @@
+2026-06-22 09:35:28,033 - main - INFO - === Logging system initialized ===
+2026-06-22 09:35:28,033 - main - INFO - Log file: logs/app_20260622_093528.log
+2026-06-22 09:35:28,033 - main - INFO - Log level: INFO
+2026-06-22 09:35:28,033 - main - INFO - Timestamp: 20260622_093528
+2026-06-22 09:35:28,542 - main - INFO - Included router: routers.aihub.router
+2026-06-22 09:35:28,551 - main - INFO - Included router: routers.auth.router
+2026-06-22 09:35:28,564 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-22 09:35:28,581 - main - INFO - Included router: routers.diseases.router
+2026-06-22 09:35:28,603 - main - INFO - Included router: routers.drugs.router
+2026-06-22 09:35:28,605 - main - INFO - Included router: routers.health.router
+2026-06-22 09:35:28,610 - main - INFO - Included router: routers.openfda.router
+2026-06-22 09:35:28,614 - main - INFO - Included router: routers.predict.router
+2026-06-22 09:35:28,630 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-22 09:35:28,638 - main - INFO - Included router: routers.settings.router
+2026-06-22 09:35:28,653 - main - INFO - Included router: routers.storage.router
+2026-06-22 09:35:28,657 - main - INFO - Included router: routers.user.router
+2026-06-22 09:35:28,661 - main - INFO - Included router: routers.user_saved_drugs.router
+2026-06-22 09:35:28,662 - main - INFO - === Application startup initiated ===
+2026-06-22 09:35:28,662 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-22 09:35:28,662 - services.database - INFO - Starting database initialization...
+2026-06-22 09:35:28,663 - core.database - INFO - Starting database initialization...
+2026-06-22 09:35:28,663 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-06-22 09:35:28,663 - core.database - INFO - Creating database engine: mssql+pymssql://sa:123456@localhost:1433/medipredict
+2026-06-22 09:35:28,839 - core.database - INFO - Database engine and session maker created successfully
+2026-06-22 09:35:28,839 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-22 09:35:28,839 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-22 09:35:28,839 - core.database - INFO - Starting table creation...
+2026-06-22 09:35:28,958 - core.database - INFO - Tables initialized successfully
+2026-06-22 09:35:28,958 - core.database - DEBUG - [DB_OP] Create tables completed in 0.1190s
+2026-06-22 09:35:28,958 - services.database - INFO - Table creation completed
+2026-06-22 09:35:28,958 - services.database - INFO - Database initialized successfully
+2026-06-22 09:35:28,958 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.2964s
+2026-06-22 09:35:28,960 - services.mock_data - INFO - Processing mock data file disease_drug_mappings.json for table disease_drug_mappings
+2026-06-22 09:35:28,974 - services.mock_data - INFO - Table disease_drug_mappings already has 648 rows (ORM check); skipping
+2026-06-22 09:35:28,976 - services.mock_data - INFO - Processing mock data file diseases.json for table diseases
+2026-06-22 09:35:29,213 - services.mock_data - INFO - ORM insert: 216 records into diseases
+2026-06-22 09:35:29,214 - services.mock_data - INFO - Processing mock data file drugs.json for table drugs
+2026-06-22 09:35:29,221 - services.mock_data - INFO - Table drugs already has 224 rows (ORM check); skipping
+2026-06-22 09:35:29,222 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-22 09:35:29,222 - services.database - INFO - Starting database initialization...
+2026-06-22 09:35:29,222 - core.database - INFO - Starting database initialization...
+2026-06-22 09:35:29,223 - core.database - INFO - Database already initialized
+2026-06-22 09:35:29,223 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-22 09:35:29,223 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-22 09:35:29,223 - core.database - INFO - Tables already initialized
+2026-06-22 09:35:29,223 - services.database - INFO - Table creation completed
+2026-06-22 09:35:29,223 - services.database - INFO - Database initialized successfully
+2026-06-22 09:35:29,223 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0010s
+2026-06-22 09:35:29,223 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-06-22 09:35:29,223 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-06-22 09:35:29,227 - main - INFO - === Application startup completed successfully ===
+2026-06-22 09:35:38,055 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:35:38,067 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 09:35:51,164 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-06-22 09:35:51,164 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-06-22 09:35:51,176 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:35:51,406 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:35:51,480 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 09:35:55,824 - routers.predict - INFO - Prediction request: symptoms=h, disease_name=h
+2026-06-22 09:35:55,836 - core.config - DEBUG - Read dynamic attribute app_ai_base_url from environment variable APP_AI_BASE_URL
+2026-06-22 09:35:55,839 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:35:55,839 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:35:56,151 - services.local_drugs - ERROR - Error fetching local drug by generic name Omeprazole: Multiple rows were found when one or none was required
+2026-06-22 09:35:56,517 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:35:56,776 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AA5FC690>
+2026-06-22 09:35:56,777 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB08F530> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:35:57,210 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAD65C50>
+2026-06-22 09:35:57,211 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:35:57,211 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:35:57,211 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:35:57,213 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:35:57,213 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:35:57,530 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:35:56 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1d8d-fOl+8eknMq6G7F2/9S3vttVu5eA"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=1&skip=0&search=openfda.generic_name%3AOmeprazole&search_after=0%3D0057cb91-fc5e-8e9d-a926-299405c5c3a8>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutknjopafmm8fj27k00'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'239'), (b'X-Vcap-Request-Id', b'58e53c48-0346-4ea4-742a-c09c88d7cd0f'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:35:57,532 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=1&skip=0&search=openfda.generic_name%3AOmeprazole&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:35:57,533 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:35:57,534 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:35:57,534 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:35:57,535 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:35:57,535 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:35:57,536 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:36:01,112 - routers.predict - INFO - Prediction request: symptoms=hi, disease_name=None
+2026-06-22 09:36:01,123 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:36:01,123 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:36:07,624 - routers.predict - INFO - Prediction request: symptoms=cảm, disease_name=None
+2026-06-22 09:36:07,641 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:36:07,641 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:36:15,485 - routers.predict - INFO - Prediction request: symptoms=tôi bị cảm, disease_name=None
+2026-06-22 09:36:15,495 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:36:15,495 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:36:15,623 - services.local_drugs - ERROR - Error fetching local drug by generic name Omeprazole: Multiple rows were found when one or none was required
+2026-06-22 09:36:15,861 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:36:16,080 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAD6C490>
+2026-06-22 09:36:16,081 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB088CB0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:36:16,516 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAD14990>
+2026-06-22 09:36:16,516 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:16,517 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:36:16,517 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:36:16,517 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:36:16,517 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:16,836 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:36:15 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1d8d-fOl+8eknMq6G7F2/9S3vttVu5eA"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=1&skip=0&search=openfda.generic_name%3AOmeprazole&search_after=0%3D0057cb91-fc5e-8e9d-a926-299405c5c3a8>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutknofmvemhn3qir350'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'239'), (b'X-Vcap-Request-Id', b'4b697361-7716-48a5-4f48-79017d201978'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:36:16,837 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=1&skip=0&search=openfda.generic_name%3AOmeprazole&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:36:16,837 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:36:16,838 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:36:16,838 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:36:16,838 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:36:16,838 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:36:16,839 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:36:26,881 - routers.predict - INFO - Prediction request: symptoms=ho, disease_name=None
+2026-06-22 09:36:26,900 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:36:26,900 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-22 09:36:27,101 - services.local_drugs - ERROR - Error fetching local drug by generic name Omeprazole: Multiple rows were found when one or none was required
+2026-06-22 09:36:27,393 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:36:27,592 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAF00E10>
+2026-06-22 09:36:27,593 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB088D40> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:36:27,993 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB0AE110>
+2026-06-22 09:36:27,994 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:27,995 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:36:27,996 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:36:27,996 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:36:27,996 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:28,694 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:36:27 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1d8d-fOl+8eknMq6G7F2/9S3vttVu5eA"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=1&skip=0&search=openfda.generic_name%3AOmeprazole&search_after=0%3D0057cb91-fc5e-8e9d-a926-299405c5c3a8>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutknr9a8lctk1pc1vb0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'238'), (b'X-Vcap-Request-Id', b'084cb612-c53f-47dc-4a19-43b19f243200'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:36:28,695 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=1&skip=0&search=openfda.generic_name%3AOmeprazole&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:36:28,695 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:36:28,698 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:36:28,698 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:36:28,698 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:36:28,698 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:36:28,698 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:36:32,610 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:32,918 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:36:32,933 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 09:36:34,262 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:36:34,276 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 09:36:39,548 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:39,855 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:36:39,860 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 09:36:40,411 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:36:40,421 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 09:36:41,562 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:41,874 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:36:41,881 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 09:36:42,666 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:36:42,680 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 09:36:44,898 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:47,489 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:36:47,499 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 09:36:48,641 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:48,648 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:36:48,685 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 09:36:49,904 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:50,211 - routers.drugs - DEBUG - Fetching drugs with id: 224, fields=None
+2026-06-22 09:36:50,521 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:36:50,734 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB0855D0>
+2026-06-22 09:36:50,735 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AAFCB650> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:36:51,164 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB091950>
+2026-06-22 09:36:51,165 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:51,165 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:36:51,166 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:36:51,166 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:36:51,166 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:51,469 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:36:50 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"bda2-//Qzw7cC3v4St0zV9eVtBzKXAFs"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&search_after=0%3D0e43e99b-2e0b-4f55-b93a-a6908634880d>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko0u8tm1fmnife500'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'237'), (b'X-Vcap-Request-Id', b'0da9b81b-dc7a-45ff-7a13-5001490fec44'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:36:51,471 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:36:51,471 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:36:51,472 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:36:51,472 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:36:51,473 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:36:51,474 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:36:51,475 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:36:51,740 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:36:51,956 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAD6F490>
+2026-06-22 09:36:51,956 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB0883B0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:36:52,404 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB038B10>
+2026-06-22 09:36:52,406 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:52,406 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:36:52,407 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:36:52,407 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:36:52,407 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:53,076 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:36:51 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"9d7dc-BoRuPSPvTr6qk3vRaMJ+2H+anug"'), (b'Link', b'<https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&search_after=0%3D10083633>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko180o4jonlupd6a0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'237'), (b'X-Vcap-Request-Id', b'063f5228-34bd-4876-4d1c-a72f155108a6'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:36:53,078 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:36:53,078 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:36:53,541 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:36:53,541 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:36:53,542 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:36:53,549 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:36:53,550 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:36:53,804 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:36:54,032 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB03BC90>
+2026-06-22 09:36:54,032 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AA7F9E20> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:36:54,517 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAD6FDD0>
+2026-06-22 09:36:54,518 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:54,518 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:36:54,518 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:36:54,518 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:36:54,518 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:36:54,828 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:36:53 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1716-yEi5eH9H20dS7RCd+0UQ+t4ftRg"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko1oinuodd55al1ug'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'237'), (b'X-Vcap-Request-Id', b'ce87b3b6-0ed2-42ba-49ea-0049d2f53bac'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:36:54,828 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:36:54,829 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:36:54,829 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:36:54,831 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:36:54,832 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:36:54,833 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:36:54,834 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:36:56,398 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:57,560 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:59,969 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:36:59,972 - routers.drugs - DEBUG - Fetching drugs with id: 224, fields=None
+2026-06-22 09:37:00,236 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:00,584 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAEF2990>
+2026-06-22 09:37:00,585 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AAFCB1D0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:01,026 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAF5C150>
+2026-06-22 09:37:01,027 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:01,027 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:01,028 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:01,028 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:01,028 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:01,430 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:00 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"bda2-//Qzw7cC3v4St0zV9eVtBzKXAFs"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&search_after=0%3D0e43e99b-2e0b-4f55-b93a-a6908634880d>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko3bcv0bih1r69b70'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'235'), (b'X-Vcap-Request-Id', b'582be6a8-49a2-4a6b-53d1-582a960788d7'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:01,431 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:01,434 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:01,439 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:01,439 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:01,439 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:01,440 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:01,440 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:01,682 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:01,893 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB030290>
+2026-06-22 09:37:01,894 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB088680> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:02,317 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB018350>
+2026-06-22 09:37:02,317 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:02,318 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:02,318 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:02,318 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:02,318 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:02,847 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:01 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"9d7dc-BoRuPSPvTr6qk3vRaMJ+2H+anug"'), (b'Link', b'<https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&search_after=0%3D10083633>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko3lhu1q10pboe7o0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'235'), (b'X-Vcap-Request-Id', b'19db52bf-5850-44e4-41bf-520abeab49b4'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:02,847 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:02,848 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:03,283 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:03,283 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:03,283 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:03,287 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:03,287 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:03,580 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:03,583 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:03,804 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB26F010>
+2026-06-22 09:37:03,804 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AAFCB650> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:04,251 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB26F050>
+2026-06-22 09:37:04,252 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:04,252 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:04,252 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:04,252 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:04,252 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:04,574 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:03 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1716-yEi5eH9H20dS7RCd+0UQ+t4ftRg"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko44lv24a66r6h6b0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'235'), (b'X-Vcap-Request-Id', b'd83b1619-9d5b-4c5b-6b17-7bd4605c8d6c'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:04,574 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:04,574 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:04,575 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:04,575 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:04,575 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:04,576 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:04,576 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:05,479 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:05,795 - routers.drugs - DEBUG - Fetching drugs with id: 224, fields=None
+2026-06-22 09:37:06,069 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:06,321 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB09AC50>
+2026-06-22 09:37:06,321 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB088B00> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:06,779 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB099D90>
+2026-06-22 09:37:06,780 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:06,780 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:06,780 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:06,781 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:06,781 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:07,093 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:06 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'1'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"bda2-//Qzw7cC3v4St0zV9eVtBzKXAFs"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&search_after=0%3D0e43e99b-2e0b-4f55-b93a-a6908634880d>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko4odstbts83pn390'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'233'), (b'X-Vcap-Request-Id', b'42be9794-389e-4bb1-7480-4ae62b960ee1'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:07,093 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:07,094 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:07,094 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:07,095 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:07,095 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:07,096 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:07,096 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:07,382 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:07,588 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB03E990>
+2026-06-22 09:37:07,589 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB089B50> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:07,753 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:08,025 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB03E610>
+2026-06-22 09:37:08,025 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:08,026 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:08,026 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:08,026 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:08,027 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:08,488 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:08,494 - routers.drugs - DEBUG - Fetching drugs with id: 224, fields=None
+2026-06-22 09:37:08,532 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:07 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"9d7dc-BoRuPSPvTr6qk3vRaMJ+2H+anug"'), (b'Link', b'<https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&search_after=0%3D10083633>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko520d78ap3an85q0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'233'), (b'X-Vcap-Request-Id', b'f7b77ec7-68ac-49b1-7285-ac74f15fe8f7'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:08,533 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:08,533 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:08,967 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:08,967 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:08,967 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:08,969 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:08,970 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:09,183 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:09,401 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB245610>
+2026-06-22 09:37:09,402 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AAFCB1D0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:09,522 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:09,839 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAD7CD50>
+2026-06-22 09:37:09,840 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:09,844 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:09,844 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:09,844 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:09,845 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:10,148 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:09 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1716-yEi5eH9H20dS7RCd+0UQ+t4ftRg"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko5g8dkojfqhq0pmg'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'232'), (b'X-Vcap-Request-Id', b'31958288-3323-4d60-544f-0e8055924109'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:10,149 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:10,149 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:10,150 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:10,150 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:10,150 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:10,151 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:10,151 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:10,403 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:10,404 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:10,606 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAEF4C10>
+2026-06-22 09:37:10,606 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB0884D0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:10,649 - routers.drugs - DEBUG - Fetching drugs with id: 224, fields=None
+2026-06-22 09:37:11,013 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219A93A48D0>
+2026-06-22 09:37:11,014 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:11,014 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:11,014 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:11,015 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:11,015 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:11,303 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:10 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"bda2-//Qzw7cC3v4St0zV9eVtBzKXAFs"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&search_after=0%3D0e43e99b-2e0b-4f55-b93a-a6908634880d>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko5pabbtfsfrqoio0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'231'), (b'X-Vcap-Request-Id', b'6b1b00eb-5b41-4825-6680-cc42557a01c8'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:11,304 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:11,304 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:11,347 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:11,347 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:11,349 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:11,349 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:11,349 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:11,605 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:11,852 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB232010>
+2026-06-22 09:37:11,852 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB088830> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:12,301 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB2320D0>
+2026-06-22 09:37:12,301 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:12,301 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:12,302 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:12,302 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:12,302 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:12,401 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:37:12,412 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 09:37:12,859 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:11 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"9d7dc-BoRuPSPvTr6qk3vRaMJ+2H+anug"'), (b'Link', b'<https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&search_after=0%3D10083633>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko63huij27bejuuh0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'231'), (b'X-Vcap-Request-Id', b'c115fdf8-eecc-4fea-6594-83a1c1f82d13'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:12,862 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:12,864 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:13,368 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:13,369 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:13,369 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:13,373 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:13,373 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:13,637 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:13,639 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:13,818 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:37:13,825 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 09:37:13,837 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB0AE750>
+2026-06-22 09:37:13,838 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB088B90> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:14,193 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:37:14,201 - routers.diseases - DEBUG - Found 216 diseasess
+2026-06-22 09:37:14,259 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAEE7790>
+2026-06-22 09:37:14,260 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:14,260 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:14,261 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:14,261 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:14,261 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:14,561 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:13 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1716-yEi5eH9H20dS7RCd+0UQ+t4ftRg"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko6imtgp4r3dhok00'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'229'), (b'X-Vcap-Request-Id', b'8acaf216-80f6-40a2-538f-0fe3b3967788'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:14,563 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:14,563 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:14,563 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:14,565 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:14,565 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:14,565 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:14,566 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:14,839 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:15,060 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAF03810>
+2026-06-22 09:37:15,061 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AA7E2C30> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:15,516 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAF027D0>
+2026-06-22 09:37:15,517 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:15,519 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:15,519 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:15,519 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:15,519 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:15,817 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:14 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"bda2-//Qzw7cC3v4St0zV9eVtBzKXAFs"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&search_after=0%3D0e43e99b-2e0b-4f55-b93a-a6908634880d>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko6sksvjubg3oj53g'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'232'), (b'X-Vcap-Request-Id', b'8de6922c-2756-4e92-6e67-edf23a39913e'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:15,818 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:15,819 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:15,821 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:15,822 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:15,822 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:15,824 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:15,825 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:16,071 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:16,289 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB25D950>
+2026-06-22 09:37:16,289 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB0883B0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:16,731 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB25D910>
+2026-06-22 09:37:16,733 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:16,733 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:16,733 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:16,734 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:16,734 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:17,196 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:17,218 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:16 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'2'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"9d7dc-BoRuPSPvTr6qk3vRaMJ+2H+anug"'), (b'Link', b'<https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&search_after=0%3D10083633>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko763ont3clatfu4g'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'229'), (b'X-Vcap-Request-Id', b'951ed884-6c70-45de-5362-e2a0ab195623'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:17,219 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:17,219 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:17,507 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-06-22 09:37:17,514 - routers.drugs - DEBUG - Found 224 drugss
+2026-06-22 09:37:17,728 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:17,729 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:17,729 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:17,731 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:17,732 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:18,056 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:18,258 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB1BC4D0>
+2026-06-22 09:37:18,258 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AA7E3EC0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:18,696 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB1BC510>
+2026-06-22 09:37:18,696 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:18,698 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:18,698 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:18,699 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:18,699 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:18,982 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:17 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"1716-yEi5eH9H20dS7RCd+0UQ+t4ftRg"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko7larhda6grfp8a0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'227'), (b'X-Vcap-Request-Id', b'1f6d3da2-f10c-4aba-5af2-90c5ac100f71'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:18,984 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3ACyproheptadine&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:18,986 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:18,987 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:18,989 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:18,990 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:18,992 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:18,994 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:19,771 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:19,774 - routers.drugs - DEBUG - Fetching drugs with id: 217, fields=None
+2026-06-22 09:37:20,038 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:20,246 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB084E90>
+2026-06-22 09:37:20,246 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AAEB0170> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:20,572 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:20,666 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAFAC710>
+2026-06-22 09:37:20,667 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:20,667 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:20,667 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:20,668 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:20,668 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:20,968 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:19 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"36cd-oT0YCaQ7lF9A0vCEZyLTtYtDcLE"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AOxymetazoline&search_after=0%3D2ee2b332-9b85-45a6-b242-3f0ebfbd08a6>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko84qtm360rop35v0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'227'), (b'X-Vcap-Request-Id', b'38554a4d-3a5c-4351-64c0-d99962a8b25b'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:20,968 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AOxymetazoline&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:20,969 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:20,969 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:20,969 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:20,969 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:20,969 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:20,969 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:21,226 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:21,383 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:21,441 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAEF0110>
+2026-06-22 09:37:21,441 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AAEB11C0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:21,872 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB0AE2D0>
+2026-06-22 09:37:21,872 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:21,873 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:21,873 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:21,873 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:21,873 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:22,422 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:21 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"166ab8-f+0IUMOR3D+rCIxbO6wb5DgYORw"'), (b'Link', b'<https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AOxymetazoline&search_after=0%3D10094396>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko8e6dr1bjl2s61f0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'227'), (b'X-Vcap-Request-Id', b'c707111b-a776-4658-5c20-cf108cf65b8b'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:22,422 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AOxymetazoline&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:22,423 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:23,146 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:23,146 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:23,147 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:23,158 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:23,159 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:23,420 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:23,635 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB6CD250>
+2026-06-22 09:37:23,636 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AB08F530> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:24,076 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB24DA90>
+2026-06-22 09:37:24,077 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:24,078 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:24,078 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:24,078 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:24,078 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:24,469 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:23 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"248d-4w5lp8w+UEun18o2gseccWSzEuI"'), (b'Link', b'<https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3AOxymetazoline&search_after=0%3D18c2fef5ee73581b1ee070b6735ab4cf869b7181d4484251fa79efd520eae0b6>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko8vdcbf2d4j577dg'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'225'), (b'X-Vcap-Request-Id', b'0c6a10df-4b1b-4529-728f-50c13da0e9fa'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:24,470 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3AOxymetazoline&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:24,471 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:24,471 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:24,471 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:24,472 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:24,472 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:24,472 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:24,978 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:25,363 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:26,754 - core.auth - DEBUG - Authentication token validated for user hash: 19086cc0
+2026-06-22 09:37:27,072 - routers.drugs - DEBUG - Fetching drugs with id: 217, fields=None
+2026-06-22 09:37:27,325 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:27,557 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB258E50>
+2026-06-22 09:37:27,558 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AA7E3650> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:28,015 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AAC8A950>
+2026-06-22 09:37:28,015 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:28,016 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:28,016 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:28,016 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:28,016 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:28,328 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:27 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"36cd-oT0YCaQ7lF9A0vCEZyLTtYtDcLE"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AOxymetazoline&search_after=0%3D2ee2b332-9b85-45a6-b242-3f0ebfbd08a6>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutko9u8phak5ho9cv40'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'223'), (b'X-Vcap-Request-Id', b'08e24e75-0d3b-4450-462b-e076b78db903'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:28,328 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AOxymetazoline&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:28,328 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-22 09:37:28,329 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-22 09:37:28,329 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-22 09:37:28,329 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-22 09:37:28,329 - httpcore.connection - DEBUG - close.started
+2026-06-22 09:37:28,330 - httpcore.connection - DEBUG - close.complete
+2026-06-22 09:37:28,583 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-22 09:37:28,817 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB25A990>
+2026-06-22 09:37:28,818 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000219AAEB0050> server_hostname='api.fda.gov' timeout=30.0
+2026-06-22 09:37:29,269 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000219AB151610>
+2026-06-22 09:37:29,270 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:29,270 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-22 09:37:29,270 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-22 09:37:29,270 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-22 09:37:29,270 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-22 09:37:29,829 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 22 Jun 2026 02:37:28 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"166ab8-f+0IUMOR3D+rCIxbO6wb5DgYORw"'), (b'Link', b'<https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AOxymetazoline&search_after=0%3D10094396>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutkoa83bb8d1cvbe7gg'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'224'), (b'X-Vcap-Request-Id', b'e2a6dea4-3f43-4d8d-6bfb-1cb893594962'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-22 09:37:29,829 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AOxymetazoline&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-22 09:37:29,829 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
