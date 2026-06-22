@@ -1,0 +1,320 @@
+2026-06-21 23:37:36,390 - main - INFO - === Logging system initialized ===
+2026-06-21 23:37:36,390 - main - INFO - Log file: logs/app_20260621_233736.log
+2026-06-21 23:37:36,390 - main - INFO - Log level: INFO
+2026-06-21 23:37:36,391 - main - INFO - Timestamp: 20260621_233736
+2026-06-21 23:37:36,926 - main - INFO - Included router: routers.aihub.router
+2026-06-21 23:37:36,934 - main - INFO - Included router: routers.auth.router
+2026-06-21 23:37:36,949 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-21 23:37:36,968 - main - INFO - Included router: routers.diseases.router
+2026-06-21 23:37:36,991 - main - INFO - Included router: routers.drugs.router
+2026-06-21 23:37:36,992 - main - INFO - Included router: routers.health.router
+2026-06-21 23:37:36,997 - main - INFO - Included router: routers.openfda.router
+2026-06-21 23:37:37,002 - main - INFO - Included router: routers.predict.router
+2026-06-21 23:37:37,021 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-21 23:37:37,028 - main - INFO - Included router: routers.settings.router
+2026-06-21 23:37:37,042 - main - INFO - Included router: routers.storage.router
+2026-06-21 23:37:37,047 - main - INFO - Included router: routers.user.router
+2026-06-21 23:37:37,054 - main - INFO - Included router: routers.user_saved_drugs.router
+2026-06-21 23:37:37,055 - main - INFO - === Application startup initiated ===
+2026-06-21 23:37:37,055 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-21 23:37:37,055 - services.database - INFO - Starting database initialization...
+2026-06-21 23:37:37,055 - core.database - INFO - Starting database initialization...
+2026-06-21 23:37:37,055 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-06-21 23:37:37,055 - core.database - INFO - Creating database engine: mssql+pymssql://sa:123456@localhost:1433/medipredict
+2026-06-21 23:37:37,282 - core.database - INFO - Database engine and session maker created successfully
+2026-06-21 23:37:37,282 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-21 23:37:37,282 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-21 23:37:37,283 - core.database - INFO - Starting table creation...
+2026-06-21 23:37:37,394 - core.database - INFO - Tables initialized successfully
+2026-06-21 23:37:37,394 - core.database - DEBUG - [DB_OP] Create tables completed in 0.1121s
+2026-06-21 23:37:37,395 - services.database - INFO - Table creation completed
+2026-06-21 23:37:37,395 - services.database - INFO - Database initialized successfully
+2026-06-21 23:37:37,395 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.3404s
+2026-06-21 23:37:37,395 - services.mock_data - INFO - Processing mock data file disease_drug_mappings.json for table disease_drug_mappings
+2026-06-21 23:37:38,966 - services.mock_data - INFO - Table disease_drug_mappings already has 210 rows; skipping mock insert
+2026-06-21 23:37:38,968 - services.mock_data - INFO - Processing mock data file diseases.json for table diseases
+2026-06-21 23:37:40,389 - services.mock_data - INFO - Table diseases already has 70 rows; skipping mock insert
+2026-06-21 23:37:40,391 - services.mock_data - INFO - Processing mock data file drugs.json for table drugs
+2026-06-21 23:37:41,743 - services.mock_data - INFO - Table drugs already has 200 rows; skipping mock insert
+2026-06-21 23:37:41,744 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-21 23:37:41,744 - services.database - INFO - Starting database initialization...
+2026-06-21 23:37:41,744 - core.database - INFO - Starting database initialization...
+2026-06-21 23:37:41,744 - core.database - INFO - Database already initialized
+2026-06-21 23:37:41,744 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-21 23:37:41,744 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-21 23:37:41,744 - core.database - INFO - Tables already initialized
+2026-06-21 23:37:41,744 - services.database - INFO - Table creation completed
+2026-06-21 23:37:41,744 - services.database - INFO - Database initialized successfully
+2026-06-21 23:37:41,744 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0000s
+2026-06-21 23:37:41,744 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-06-21 23:37:41,745 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-06-21 23:37:41,751 - main - INFO - === Application startup completed successfully ===
+2026-06-21 23:39:14,033 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-06-21 23:39:14,033 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-06-21 23:39:14,041 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:39:14,042 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=20, fields=None
+2026-06-21 23:39:14,072 - routers.diseases - DEBUG - Found 70 diseasess
+2026-06-21 23:39:16,977 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=20, fields=None
+2026-06-21 23:39:16,982 - routers.diseases - DEBUG - Found 70 diseasess
+2026-06-21 23:39:34,621 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:39:34,940 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:39:34,964 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:39:51,589 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:39:51,886 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A6C46D0>
+2026-06-21 23:39:51,888 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002F11A740A70> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:39:52,335 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A693D10>
+2026-06-21 23:39:52,336 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:39:52,336 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:39:52,338 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:39:52,338 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:39:52,339 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:39:52,615 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:39:51 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'157'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"9d-BZ2dXKxd7e4W3S5A0UnSOiHNhSQ"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutc6o51bi67vacb72ug'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'239'), (b'X-Vcap-Request-Id', b'4b367ff9-4e59-4846-45a5-34172668225b'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:39:52,616 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Athu%E1%BB%91c+c%E1%BA%A3m+OR+openfda.generic_name%3Athu%E1%BB%91c+c%E1%BA%A3m&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:39:52,616 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:39:52,616 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:39:52,616 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:39:52,616 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:39:52,618 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: openfda.brand_name:thuốc cảm OR openfda.generic_name:thuốc cảm"
+  }
+}
+2026-06-21 23:39:52,618 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:39:52,619 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:40:02,130 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:40:02,137 - routers.drugs - DEBUG - Fetching drugs with id: 408, fields=None
+2026-06-21 23:40:02,491 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:40:02,702 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A616BD0>
+2026-06-21 23:40:02,702 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002F11A4A92E0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:40:03,126 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F118B86750>
+2026-06-21 23:40:03,127 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:40:03,127 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:40:03,127 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:40:03,128 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:40:03,128 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:40:04,630 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:40:03 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'1'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"2ae25-t3PHcGqQSF9sprJ6jU7Uq4QEWV8"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AExtra%20Strength%20pain%20relief%20%28ACETAMINOPHEN%29&search_after=0%3D000155a8-709c-44e5-a75f-cd890f3a7caf>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutc6qpapsf1g8k0vqbg'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'239'), (b'X-Vcap-Request-Id', b'7ea028f6-919f-4b14-76bb-818d70b9946f'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:40:04,631 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AExtra+Strength+pain+relief+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:40:04,632 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:40:04,633 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:40:04,633 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:40:04,633 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:40:04,636 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:40:04,637 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:40:04,889 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:40:05,102 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A7869D0>
+2026-06-21 23:40:05,102 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002F11A740DD0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:40:05,534 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11847A5D0>
+2026-06-21 23:40:05,534 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:40:05,534 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:40:05,534 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:40:05,534 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:40:05,534 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:40:07,403 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:40:07,658 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:40:06 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'2'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"9c1bd-Q4930fuYgaovDmTKEPwR6zaX/xs"'), (b'Link', b'<https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AExtra%20Strength%20pain%20relief%20%28ACETAMINOPHEN%29&search_after=0%3D10003318>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutc6rc3fbds8fviriv0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'238'), (b'X-Vcap-Request-Id', b'b81de06a-aebb-49f4-5a5c-c54099b42db3'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:40:07,659 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AExtra+Strength+pain+relief+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:40:07,659 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:40:07,721 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:40:07,732 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:40:08,107 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:40:08,107 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:40:08,107 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:40:08,110 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:40:08,111 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:40:08,400 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:40:08,613 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A8B9A10>
+2026-06-21 23:40:08,614 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002F11A741130> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:40:09,026 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F118C47150>
+2026-06-21 23:40:09,027 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:40:09,029 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:40:09,031 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:40:09,032 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:40:09,032 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:40:09,366 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:40:08 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"2284-TIppqTbowTGggAsM6LEEGk8ZnPc"'), (b'Link', b'<https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3AExtra%20Strength%20pain%20relief%20%28ACETAMINOPHEN%29&search_after=0%3D05d427857481f987f01e5fdcf5895338d817785060f97c2d5b213684a54977f3>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutc6s7ep6kdqnmmlk10'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'237'), (b'X-Vcap-Request-Id', b'd9d167ab-3d57-477a-69e5-103257058c95'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:40:09,368 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3AExtra+Strength+pain+relief+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:40:09,370 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:40:09,370 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:40:09,371 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:40:09,371 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:40:09,373 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:40:09,374 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:40:27,501 - routers.predict - INFO - Prediction request: symptoms=nhức đầu, disease_name=None
+2026-06-21 23:40:27,576 - core.config - DEBUG - Read dynamic attribute app_ai_base_url from environment variable APP_AI_BASE_URL
+2026-06-21 23:40:27,578 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:40:27,578 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:40:41,078 - routers.diseases - DEBUG - Fetching diseases with id: 66, fields=None
+2026-06-21 23:40:41,363 - routers.disease_drug_mappings - DEBUG - Querying disease_drug_mappingss: query={"disease_id":66}, sort=priority, skip=0, limit=20, fields=None
+2026-06-21 23:40:41,377 - routers.disease_drug_mappings - DEBUG - Found 3 disease_drug_mappingss
+2026-06-21 23:40:41,408 - routers.drugs - DEBUG - Fetching drugs with id: 172, fields=None
+2026-06-21 23:40:41,416 - routers.drugs - WARNING - Drugs with id 172 not found
+2026-06-21 23:40:41,418 - core.database - ERROR - Database session error: 404: Drugs not found
+Traceback (most recent call last):
+  File "C:\Users\ASA\Desktop\Nhóm 8\CNPM\App\backend\core\database.py", line 270, in get_db
+    yield session
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 29, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 346, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\Desktop\Nhóm 8\CNPM\App\backend\routers\drugs.py", line 194, in get_drugs
+    raise HTTPException(status_code=404, detail="Drugs not found")
+fastapi.exceptions.HTTPException: 404: Drugs not found
+2026-06-21 23:40:41,692 - routers.drugs - DEBUG - Fetching drugs with id: 44, fields=None
+2026-06-21 23:40:41,692 - routers.drugs - DEBUG - Fetching drugs with id: 87, fields=None
+2026-06-21 23:40:41,703 - routers.drugs - WARNING - Drugs with id 87 not found
+2026-06-21 23:40:41,703 - routers.drugs - WARNING - Drugs with id 44 not found
+2026-06-21 23:40:41,704 - core.database - ERROR - Database session error: 404: Drugs not found
+Traceback (most recent call last):
+  File "C:\Users\ASA\Desktop\Nhóm 8\CNPM\App\backend\core\database.py", line 270, in get_db
+    yield session
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 29, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 346, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\Desktop\Nhóm 8\CNPM\App\backend\routers\drugs.py", line 194, in get_drugs
+    raise HTTPException(status_code=404, detail="Drugs not found")
+fastapi.exceptions.HTTPException: 404: Drugs not found
+2026-06-21 23:40:41,707 - core.database - ERROR - Database session error: 404: Drugs not found
+Traceback (most recent call last):
+  File "C:\Users\ASA\Desktop\Nhóm 8\CNPM\App\backend\core\database.py", line 270, in get_db
+    yield session
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 29, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 346, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\ASA\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASA\Desktop\Nhóm 8\CNPM\App\backend\routers\drugs.py", line 194, in get_drugs
+    raise HTTPException(status_code=404, detail="Drugs not found")
+fastapi.exceptions.HTTPException: 404: Drugs not found
+2026-06-21 23:40:48,464 - routers.predict - INFO - Prediction request: symptoms=đau đầu, disease_name=None
+2026-06-21 23:40:48,490 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:40:48,490 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:40:55,549 - routers.predict - INFO - Prediction request: symptoms=đau đầu, ho, disease_name=None
+2026-06-21 23:40:55,557 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:40:55,557 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:41:08,718 - routers.predict - INFO - Prediction request: symptoms=đau đầu, ho, sốt, disease_name=None
+2026-06-21 23:41:08,725 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:41:08,726 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:41:16,633 - routers.predict - INFO - Prediction request: symptoms=chảy máu, disease_name=None
+2026-06-21 23:41:16,640 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:41:16,641 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:41:53,092 - routers.predict - INFO - Prediction request: symptoms=đường type 2, disease_name=None
+2026-06-21 23:41:53,124 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:41:53,126 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:42:10,064 - routers.predict - INFO - Prediction request: symptoms=bệnh rối loạn chuyển hóa làm tăng lượng đường trong máu, disease_name=None
+2026-06-21 23:42:10,069 - services.aihub - ERROR - gentxt error: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:42:10,070 - routers.predict - WARNING - AI prediction failed, using fallback matching: AI service not configured. Set APP_AI_BASE_URL and APP_AI_KEY.
+2026-06-21 23:42:18,328 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:42:18,331 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:42:18,374 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:42:22,717 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=20, fields=None
+2026-06-21 23:42:22,721 - routers.diseases - DEBUG - Found 70 diseasess
+2026-06-21 23:42:36,310 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:42:36,313 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:42:36,324 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:42:37,942 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:42:38,225 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A454C50>
+2026-06-21 23:42:38,225 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002F11A800710> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:42:38,618 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A778D10>
+2026-06-21 23:42:38,619 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:42:38,619 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:42:38,620 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:42:38,620 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:42:38,620 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:42:38,901 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:42:38 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'2'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"10efe-323QOhezYKClKcIYkt1QRbCUWhY"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Apanadol%20OR%20openfda.generic_name%3Apanadol&search_after=0%3Df626ab17-01c9-4493-ba9e-0c8c11146384>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutc80o08b1ml1bk36h0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'239'), (b'X-Vcap-Request-Id', b'f0607fd5-d35f-4684-73c7-49ed9f8e0be4'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:42:38,903 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Apanadol+OR+openfda.generic_name%3Apanadol&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:42:38,903 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:42:38,904 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:42:38,904 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:42:38,904 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:42:38,905 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:42:38,906 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:42:43,264 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:42:43,492 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A8BB3D0>
+2026-06-21 23:42:43,493 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002F11A7F5010> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:42:43,944 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11A8B92D0>
+2026-06-21 23:42:43,945 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:42:43,946 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:42:43,946 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:42:43,946 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:42:43,947 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:42:44,360 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:42:43 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"108087-jiDU/A5edzOXqGU9hQdwo4lkTl4"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Apanadol%20ex%20OR%20openfda.generic_name%3Apanadol%20ex&search_after=0%3D0078fb3d-3595-4ae1-a059-1d5e81c879cf>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutc821puqkl6mcs5mu0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'238'), (b'X-Vcap-Request-Id', b'be0ab9a4-dffe-4bac-7cfc-5388ac080ad9'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:42:44,360 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Apanadol+ex+OR+openfda.generic_name%3Apanadol+ex&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:42:44,361 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:42:45,094 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:42:45,094 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:42:45,095 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:42:45,101 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:42:45,101 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:42:49,928 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:42:50,123 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11847B650>
+2026-06-21 23:42:50,124 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002F11A800710> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:42:50,515 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002F11847A050>
+2026-06-21 23:42:50,515 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:42:50,516 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:42:50,516 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:42:50,516 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:42:50,516 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:42:51,126 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:42:50 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'1'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"77930-ixVKY23oQkQpuoQ+jerZxoabMcM"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Apanadol%20extra%20OR%20openfda.generic_name%3Apanadol%20extra&search_after=0%3D003aee15-e811-4dae-aa8c-4381ae5a17e3>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutc83kulm59iv3mspjg'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'237'), (b'X-Vcap-Request-Id', b'5a74726b-977d-461e-58d1-b1efd663ad71'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:42:51,127 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=9&skip=0&search=openfda.brand_name%3Apanadol+extra+OR+openfda.generic_name%3Apanadol+extra&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:42:51,127 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:42:51,338 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:42:51,338 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:42:51,338 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:42:51,341 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:42:51,341 - httpcore.connection - DEBUG - close.complete

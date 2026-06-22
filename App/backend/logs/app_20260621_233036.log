@@ -1,0 +1,54 @@
+2026-06-21 23:30:36,712 - main - INFO - === Logging system initialized ===
+2026-06-21 23:30:36,712 - main - INFO - Log file: logs/app_20260621_233036.log
+2026-06-21 23:30:36,712 - main - INFO - Log level: INFO
+2026-06-21 23:30:36,712 - main - INFO - Timestamp: 20260621_233036
+2026-06-21 23:30:37,231 - main - INFO - Included router: routers.aihub.router
+2026-06-21 23:30:37,241 - main - INFO - Included router: routers.auth.router
+2026-06-21 23:30:37,256 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-21 23:30:37,274 - main - INFO - Included router: routers.diseases.router
+2026-06-21 23:30:37,304 - main - INFO - Included router: routers.drugs.router
+2026-06-21 23:30:37,305 - main - INFO - Included router: routers.health.router
+2026-06-21 23:30:37,309 - main - INFO - Included router: routers.openfda.router
+2026-06-21 23:30:37,316 - main - INFO - Included router: routers.predict.router
+2026-06-21 23:30:37,335 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-21 23:30:37,343 - main - INFO - Included router: routers.settings.router
+2026-06-21 23:30:37,360 - main - INFO - Included router: routers.storage.router
+2026-06-21 23:30:37,363 - main - INFO - Included router: routers.user.router
+2026-06-21 23:30:37,372 - main - INFO - Included router: routers.user_saved_drugs.router
+2026-06-21 23:30:37,374 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-06-21 23:30:37,400 - main - INFO - === Application startup initiated ===
+2026-06-21 23:30:37,400 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-21 23:30:37,400 - services.database - INFO - Starting database initialization...
+2026-06-21 23:30:37,400 - core.database - INFO - Starting database initialization...
+2026-06-21 23:30:37,400 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-06-21 23:30:37,401 - core.database - INFO - Creating database engine: mssql+pymssql://sa:123456@localhost:1433/medipredict
+2026-06-21 23:30:37,494 - core.database - INFO - Database engine and session maker created successfully
+2026-06-21 23:30:37,494 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-21 23:30:37,494 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-21 23:30:37,494 - core.database - INFO - Starting table creation...
+2026-06-21 23:30:37,506 - core.database - INFO - Tables initialized successfully
+2026-06-21 23:30:37,506 - core.database - DEBUG - [DB_OP] Create tables completed in 0.0117s
+2026-06-21 23:30:37,506 - services.database - INFO - Table creation completed
+2026-06-21 23:30:37,506 - services.database - INFO - Database initialized successfully
+2026-06-21 23:30:37,506 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.1056s
+2026-06-21 23:30:37,507 - services.mock_data - INFO - Processing mock data file disease_drug_mappings.json for table disease_drug_mappings
+2026-06-21 23:30:37,624 - services.mock_data - INFO - Inserted 210 mock records into disease_drug_mappings
+2026-06-21 23:30:37,625 - services.mock_data - INFO - Processing mock data file diseases.json for table diseases
+2026-06-21 23:30:37,722 - services.mock_data - INFO - Inserted 70 mock records into diseases
+2026-06-21 23:30:37,723 - services.mock_data - INFO - Processing mock data file drugs.json for table drugs
+2026-06-21 23:30:39,133 - services.mock_data - INFO - Inserted 200 mock records into drugs
+2026-06-21 23:30:39,135 - services.mock_data - INFO - Processing mock data file drugs_openfda.json for table drugs_openfda
+2026-06-21 23:30:39,265 - services.mock_data - WARNING - Table drugs_openfda does not exist; skipping drugs_openfda.json
+2026-06-21 23:30:39,265 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-21 23:30:39,265 - services.database - INFO - Starting database initialization...
+2026-06-21 23:30:39,265 - core.database - INFO - Starting database initialization...
+2026-06-21 23:30:39,267 - core.database - INFO - Database already initialized
+2026-06-21 23:30:39,267 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-21 23:30:39,267 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-21 23:30:39,267 - core.database - INFO - Tables already initialized
+2026-06-21 23:30:39,267 - services.database - INFO - Table creation completed
+2026-06-21 23:30:39,267 - services.database - INFO - Database initialized successfully
+2026-06-21 23:30:39,267 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0015s
+2026-06-21 23:30:39,267 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-06-21 23:30:39,267 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-06-21 23:30:39,276 - main - INFO - === Application startup completed successfully ===

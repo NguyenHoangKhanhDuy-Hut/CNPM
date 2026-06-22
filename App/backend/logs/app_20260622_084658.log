@@ -1,0 +1,241 @@
+2026-06-22 08:46:58,225 - main - INFO - === Logging system initialized ===
+2026-06-22 08:46:58,225 - main - INFO - Log file: logs/app_20260622_084658.log
+2026-06-22 08:46:58,225 - main - INFO - Log level: INFO
+2026-06-22 08:46:58,225 - main - INFO - Timestamp: 20260622_084658
+2026-06-22 08:46:59,368 - main - INFO - Included router: routers.aihub.router
+2026-06-22 08:46:59,384 - main - INFO - Included router: routers.auth.router
+2026-06-22 08:46:59,410 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-22 08:46:59,439 - main - INFO - Included router: routers.diseases.router
+2026-06-22 08:46:59,486 - main - INFO - Included router: routers.drugs.router
+2026-06-22 08:46:59,488 - main - INFO - Included router: routers.health.router
+2026-06-22 08:46:59,499 - main - INFO - Included router: routers.openfda.router
+2026-06-22 08:46:59,507 - main - INFO - Included router: routers.predict.router
+2026-06-22 08:46:59,539 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-22 08:46:59,556 - main - INFO - Included router: routers.settings.router
+2026-06-22 08:46:59,582 - main - INFO - Included router: routers.storage.router
+2026-06-22 08:46:59,593 - main - INFO - Included router: routers.user.router
+2026-06-22 08:46:59,605 - main - INFO - Included router: routers.user_saved_drugs.router
+2026-06-22 08:47:00,585 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.added: 1>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084700.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs')}
+2026-06-22 09:10:11,197 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.added: 1>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091011.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs')}
+2026-06-22 09:10:12,758 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs'), (<Change.added: 1>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091012.log')}
+2026-06-22 09:11:05,789 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091012.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091011.log')}
+2026-06-22 09:16:36,044 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs')}
+2026-06-22 09:16:36,860 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084700.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:16:49,523 - watchfiles.main - DEBUG - 1 change detected: {(<Change.added: 1>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log')}
+2026-06-22 09:16:50,942 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.added: 1>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091650.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs')}
+2026-06-22 09:17:33,179 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs')}
+2026-06-22 09:20:04,335 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084700.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:05,000 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091650.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:08,029 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:08,696 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:09,048 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:09,758 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:10,121 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:10,731 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:13,553 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:14,216 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:14,572 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:15,234 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:15,587 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:16,250 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:20,038 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:20,697 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:23,875 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:24,544 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:24,898 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:25,507 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:25,915 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:26,572 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:30,248 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:30,966 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:31,317 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:32,029 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:32,395 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:33,053 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:37,344 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:37,998 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:38,351 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:38,966 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:39,329 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:39,991 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:43,732 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:44,386 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:44,742 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:45,404 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:45,758 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:46,420 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:50,456 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:51,218 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:51,583 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:52,296 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:52,661 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:53,322 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:55,840 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091649.log'), (<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_091650.log')}
+2026-06-22 09:20:57,660 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:58,324 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:58,681 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:59,294 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:20:59,653 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:00,266 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:05,920 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:06,584 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:06,940 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:07,549 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:07,903 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:08,512 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:13,255 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:13,919 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:14,273 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:14,883 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:15,242 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:15,902 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:20,089 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:20,699 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:21,052 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:21,711 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:22,117 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:22,722 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:29,843 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:30,502 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:30,858 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:31,519 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:31,923 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:32,581 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:38,230 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:38,792 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:39,154 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:39,765 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:40,121 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:40,784 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:46,933 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:47,587 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:47,941 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:48,550 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:48,912 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:21:49,574 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:34,485 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:35,138 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:35,491 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:36,102 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:36,508 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:37,170 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:37,525 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:38,137 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:38,491 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:39,200 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:44,400 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:45,113 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:45,465 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:46,079 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:46,437 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:47,097 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:51,784 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:52,452 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:52,809 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:53,422 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:53,784 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:22:54,447 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:01,818 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:02,480 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:02,835 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:03,497 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:03,852 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:04,460 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:14,145 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:14,805 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:15,160 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:15,825 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:16,235 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:16,892 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:21,136 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:21,791 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:22,145 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:22,753 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:23,111 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:23,722 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:32,158 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:32,813 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:33,166 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:33,775 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:34,132 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:34,796 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:38,684 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:39,302 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:39,660 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:40,276 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:40,634 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:41,247 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:44,782 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:45,436 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:45,788 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:46,399 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:46,758 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:47,569 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:50,902 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:51,557 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:51,912 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:52,571 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:52,976 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:53,582 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:57,169 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:57,825 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:58,178 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:58,843 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:59,209 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:23:59,819 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:02,949 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:03,614 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:03,969 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:04,583 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:04,941 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:05,557 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:09,742 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:10,408 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:10,765 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:11,378 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:11,735 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:12,348 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:41,159 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:41,813 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:42,170 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:42,780 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:43,133 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:43,792 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:50,962 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:51,576 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:51,934 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:52,544 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:52,900 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:24:53,510 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:08,942 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:09,608 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:09,962 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:10,574 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:10,984 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:11,691 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:16,228 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:16,885 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:17,237 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:17,850 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:18,258 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:25:18,864 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:22,937 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:23,601 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:23,956 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:24,665 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:25,022 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:25,683 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:51,364 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:52,024 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:52,379 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:53,041 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:53,399 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:54,057 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:26:54,413 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:27:31,168 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:27:31,972 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:27:32,382 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:27:33,238 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:27:33,696 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:27:34,512 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\logs\\app_20260622_084658.log')}
+2026-06-22 09:27:39,055 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Team 8\\CNPM\\App\\backend\\services\\drugs.py')}
