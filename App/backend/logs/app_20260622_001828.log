@@ -1,0 +1,18 @@
+2026-06-22 00:18:28,742 - main - INFO - === Logging system initialized ===
+2026-06-22 00:18:28,742 - main - INFO - Log file: logs/app_20260622_001828.log
+2026-06-22 00:18:28,742 - main - INFO - Log level: INFO
+2026-06-22 00:18:28,742 - main - INFO - Timestamp: 20260622_001828
+2026-06-22 00:18:29,300 - main - INFO - Included router: routers.aihub.router
+2026-06-22 00:18:29,311 - main - INFO - Included router: routers.auth.router
+2026-06-22 00:18:29,333 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-22 00:18:29,351 - main - INFO - Included router: routers.diseases.router
+2026-06-22 00:18:29,359 - main - INFO - Included router: routers.drugs.router
+2026-06-22 00:18:29,360 - main - INFO - Included router: routers.health.router
+2026-06-22 00:18:29,365 - main - INFO - Included router: routers.openfda.router
+2026-06-22 00:18:29,372 - main - INFO - Included router: routers.predict.router
+2026-06-22 00:18:29,388 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-22 00:18:29,396 - main - INFO - Included router: routers.settings.router
+2026-06-22 00:18:29,410 - main - INFO - Included router: routers.storage.router
+2026-06-22 00:18:29,414 - main - INFO - Included router: routers.user.router
+2026-06-22 00:18:29,425 - main - INFO - Included router: routers.user_saved_drugs.router
+2026-06-22 00:18:30,254 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\ASA\\Desktop\\Nhóm 8\\CNPM\\App\\backend\\logs'), (<Change.added: 1>, 'C:\\Users\\ASA\\Desktop\\Nhóm 8\\CNPM\\App\\backend\\logs\\app_20260622_001830.log')}

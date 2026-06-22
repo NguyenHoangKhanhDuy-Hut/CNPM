@@ -1,0 +1,17 @@
+2026-06-22 01:22:37,190 - main - INFO - === Logging system initialized ===
+2026-06-22 01:22:37,191 - main - INFO - Log file: logs/app_20260622_012237.log
+2026-06-22 01:22:37,191 - main - INFO - Log level: INFO
+2026-06-22 01:22:37,191 - main - INFO - Timestamp: 20260622_012237
+2026-06-22 01:22:37,795 - main - INFO - Included router: routers.aihub.router
+2026-06-22 01:22:37,804 - main - INFO - Included router: routers.auth.router
+2026-06-22 01:22:37,820 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-22 01:22:37,837 - main - INFO - Included router: routers.diseases.router
+2026-06-22 01:22:37,847 - main - INFO - Included router: routers.drugs.router
+2026-06-22 01:22:37,848 - main - INFO - Included router: routers.health.router
+2026-06-22 01:22:37,853 - main - INFO - Included router: routers.openfda.router
+2026-06-22 01:22:37,858 - main - INFO - Included router: routers.predict.router
+2026-06-22 01:22:37,875 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-22 01:22:37,883 - main - INFO - Included router: routers.settings.router
+2026-06-22 01:22:37,898 - main - INFO - Included router: routers.storage.router
+2026-06-22 01:22:37,902 - main - INFO - Included router: routers.user.router
+2026-06-22 01:22:37,910 - main - INFO - Included router: routers.user_saved_drugs.router

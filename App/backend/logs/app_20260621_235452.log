@@ -1,0 +1,423 @@
+2026-06-21 23:54:52,927 - main - INFO - === Logging system initialized ===
+2026-06-21 23:54:52,927 - main - INFO - Log file: logs/app_20260621_235452.log
+2026-06-21 23:54:52,927 - main - INFO - Log level: INFO
+2026-06-21 23:54:52,927 - main - INFO - Timestamp: 20260621_235452
+2026-06-21 23:54:53,440 - main - INFO - Included router: routers.aihub.router
+2026-06-21 23:54:53,447 - main - INFO - Included router: routers.auth.router
+2026-06-21 23:54:53,464 - main - INFO - Included router: routers.disease_drug_mappings.router
+2026-06-21 23:54:53,482 - main - INFO - Included router: routers.diseases.router
+2026-06-21 23:54:53,504 - main - INFO - Included router: routers.drugs.router
+2026-06-21 23:54:53,505 - main - INFO - Included router: routers.health.router
+2026-06-21 23:54:53,510 - main - INFO - Included router: routers.openfda.router
+2026-06-21 23:54:53,514 - main - INFO - Included router: routers.predict.router
+2026-06-21 23:54:53,532 - main - INFO - Included router: routers.prediction_histories.router
+2026-06-21 23:54:53,539 - main - INFO - Included router: routers.settings.router
+2026-06-21 23:54:53,552 - main - INFO - Included router: routers.storage.router
+2026-06-21 23:54:53,557 - main - INFO - Included router: routers.user.router
+2026-06-21 23:54:53,564 - main - INFO - Included router: routers.user_saved_drugs.router
+2026-06-21 23:54:53,564 - main - INFO - === Application startup initiated ===
+2026-06-21 23:54:53,566 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-21 23:54:53,566 - services.database - INFO - Starting database initialization...
+2026-06-21 23:54:53,566 - core.database - INFO - Starting database initialization...
+2026-06-21 23:54:53,566 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-06-21 23:54:53,566 - core.database - INFO - Creating database engine: mssql+pymssql://sa:123456@localhost:1433/medipredict
+2026-06-21 23:54:53,693 - core.database - INFO - Database engine and session maker created successfully
+2026-06-21 23:54:53,693 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-21 23:54:53,693 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-21 23:54:53,694 - core.database - INFO - Starting table creation...
+2026-06-21 23:54:53,788 - core.database - INFO - Tables initialized successfully
+2026-06-21 23:54:53,788 - core.database - DEBUG - [DB_OP] Create tables completed in 0.0949s
+2026-06-21 23:54:53,788 - services.database - INFO - Table creation completed
+2026-06-21 23:54:53,788 - services.database - INFO - Database initialized successfully
+2026-06-21 23:54:53,788 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.2229s
+2026-06-21 23:54:53,790 - services.mock_data - INFO - Processing mock data file disease_drug_mappings.json for table disease_drug_mappings
+2026-06-21 23:54:55,155 - services.mock_data - INFO - Table disease_drug_mappings already has 210 rows; skipping mock insert
+2026-06-21 23:54:55,156 - services.mock_data - INFO - Processing mock data file diseases.json for table diseases
+2026-06-21 23:54:55,500 - services.mock_data - INFO - Table diseases already has 70 rows; skipping mock insert
+2026-06-21 23:54:55,500 - services.mock_data - INFO - Processing mock data file drugs.json for table drugs
+2026-06-21 23:54:55,516 - services.mock_data - INFO - Table drugs already has 200 rows; skipping mock insert
+2026-06-21 23:54:55,517 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-06-21 23:54:55,517 - services.database - INFO - Starting database initialization...
+2026-06-21 23:54:55,517 - core.database - INFO - Starting database initialization...
+2026-06-21 23:54:55,517 - core.database - INFO - Database already initialized
+2026-06-21 23:54:55,517 - services.database - INFO - Database connection initialized, now creating tables if tables not exist...
+2026-06-21 23:54:55,517 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-06-21 23:54:55,517 - core.database - INFO - Tables already initialized
+2026-06-21 23:54:55,517 - services.database - INFO - Table creation completed
+2026-06-21 23:54:55,517 - services.database - INFO - Database initialized successfully
+2026-06-21 23:54:55,517 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0000s
+2026-06-21 23:54:55,517 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-06-21 23:54:55,517 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-06-21 23:54:55,523 - main - INFO - === Application startup completed successfully ===
+2026-06-21 23:54:59,727 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-06-21 23:54:59,728 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-06-21 23:54:59,736 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:54:59,737 - routers.diseases - DEBUG - Querying diseasess: query=None, sort=None, skip=0, limit=20, fields=None
+2026-06-21 23:54:59,749 - routers.diseases - DEBUG - Found 70 diseasess
+2026-06-21 23:55:01,650 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:01,653 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:55:01,693 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:55:11,445 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:11,753 - routers.drugs - DEBUG - Fetching drugs with id: 621, fields=None
+2026-06-21 23:55:12,135 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:12,429 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E40E3DD0>
+2026-06-21 23:55:12,429 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B4C20> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:12,856 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E3EA3A90>
+2026-06-21 23:55:12,857 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:12,859 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:12,860 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:12,861 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:12,861 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:13,137 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:12 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'148'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"94-eBdqUbQHWo6yDpWNJ89Rl3b7A6E"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdosbch49ktgkgtb0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'239'), (b'X-Vcap-Request-Id', b'0ca7c9af-38d6-4d7b-4e17-4b1a205d8259'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:13,138 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:13,138 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:13,138 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:13,138 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:13,139 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:13,139 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: openfda.brand_name:Tăng cường Giảm đau (ACETAMINOPHEN)"
+  }
+}
+2026-06-21 23:55:13,139 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:13,139 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:13,417 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:13,636 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48E5350>
+2026-06-21 23:55:13,638 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E47FDC70> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:14,035 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48E5390>
+2026-06-21 23:55:14,035 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:14,036 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:14,036 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:14,036 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:14,036 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:14,313 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:55:13 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"49ca-cV1V/X5jsbKZMwDjmUDzkMclCoU"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.generic_name%3AACETAMINOPHEN&search_after=0%3D0035a4fd-8dd5-4534-a1b5-f510d637f721>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdp5hev3t731nmj00'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'238'), (b'X-Vcap-Request-Id', b'75c6c8e3-e084-4915-54db-946009b5ee9c'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:14,315 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.generic_name%3AACETAMINOPHEN&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:55:14,315 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:14,318 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:14,319 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:14,319 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:14,319 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:14,320 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:14,613 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:14,829 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F16D0>
+2026-06-21 23:55:14,829 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B51C0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:15,260 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F1710>
+2026-06-21 23:55:15,261 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:15,261 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:15,262 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:15,262 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:15,262 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:15,541 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:14 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'161'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"a1-VQoiTQF86KKN8SHmIQyx5+vjjTQ"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdpf3lpbr46r7c9o0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'238'), (b'X-Vcap-Request-Id', b'39019f89-ae8e-4393-4055-7fd1d3976caf'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:15,541 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:15,542 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:15,542 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:15,542 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:15,542 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:15,542 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: patient.drug.openfda.brand_name:Tăng cường Giảm đau (ACETAMINOPHEN)"
+  }
+}
+2026-06-21 23:55:15,542 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:15,544 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:15,848 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:16,056 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F3C10>
+2026-06-21 23:55:16,056 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B5520> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:16,487 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F3B90>
+2026-06-21 23:55:16,488 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:16,490 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:16,490 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:16,490 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:16,491 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:16,774 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:15 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'172'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"ac-G5LCD+wKDCKcqY90BW5ZqMU1sko"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdpopvjjj08kd9t2g'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'236'), (b'X-Vcap-Request-Id', b'e737067a-c7d8-481d-7982-4a279b074996'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:16,774 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:16,775 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:16,775 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:16,775 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:16,775 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:16,775 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: product_description:Tăng cường Giảm đau (ACETAMINOPHEN) AND product_type:drugs"
+  }
+}
+2026-06-21 23:55:16,775 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:16,776 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:24,209 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:24,217 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:55:24,232 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:55:26,081 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:26,394 - routers.drugs - DEBUG - Fetching drugs with id: 620, fields=None
+2026-06-21 23:55:26,690 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:26,913 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F2290>
+2026-06-21 23:55:26,915 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E47FDBE0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:27,355 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F38D0>
+2026-06-21 23:55:27,356 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:27,356 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:27,356 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:27,356 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:27,356 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:27,639 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:26 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'148'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"94-eBdqUbQHWo6yDpWNJ89Rl3b7A6E"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdsdkj4asmst61qb0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'235'), (b'X-Vcap-Request-Id', b'28e9eec1-1d0b-4a6b-469b-77828ba2573a'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:27,639 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:27,639 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:27,639 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:27,641 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:27,641 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:27,641 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: openfda.brand_name:Tăng cường Giảm đau (ACETAMINOPHEN)"
+  }
+}
+2026-06-21 23:55:27,641 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:27,642 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:27,905 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:27,911 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:27,917 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:55:27,995 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:55:28,126 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E4834C90>
+2026-06-21 23:55:28,126 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E2E0AD50> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:28,526 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:28,558 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E3F17510>
+2026-06-21 23:55:28,558 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:28,559 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:28,559 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:28,559 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:28,559 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:28,842 - routers.drugs - DEBUG - Fetching drugs with id: 621, fields=None
+2026-06-21 23:55:28,872 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:55:27 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"49ca-cV1V/X5jsbKZMwDjmUDzkMclCoU"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.generic_name%3AACETAMINOPHEN&search_after=0%3D0035a4fd-8dd5-4534-a1b5-f510d637f721>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdsn1riui5s4aqre0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'235'), (b'X-Vcap-Request-Id', b'3aa97a67-5516-47c3-7290-f8b3b21ac833'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:28,873 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.generic_name%3AACETAMINOPHEN&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:55:28,874 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:28,874 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:28,874 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:28,875 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:28,875 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:28,875 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:29,175 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:29,394 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48D5610>
+2026-06-21 23:55:29,394 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B4EF0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:29,836 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F5C90>
+2026-06-21 23:55:29,837 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:29,838 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:29,838 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:29,838 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:29,838 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:29,957 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:55:29,958 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:29,970 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:55:30,131 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:29 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'161'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"a1-VQoiTQF86KKN8SHmIQyx5+vjjTQ"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdt13oorg4hnmotp0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'234'), (b'X-Vcap-Request-Id', b'a2a7f315-1012-4ad2-7b7c-e9f03fe4872b'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:30,131 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:30,133 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:30,133 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:30,133 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:30,133 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:30,134 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: patient.drug.openfda.brand_name:Tăng cường Giảm đau (ACETAMINOPHEN)"
+  }
+}
+2026-06-21 23:55:30,134 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:30,135 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:30,451 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:30,623 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:30,662 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E482B190>
+2026-06-21 23:55:30,663 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E47FDBE0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:30,938 - routers.drugs - DEBUG - Fetching drugs with id: 620, fields=None
+2026-06-21 23:55:31,091 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E4775E50>
+2026-06-21 23:55:31,091 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:31,091 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:31,091 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:31,091 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:31,093 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:31,369 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:30 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'172'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"ac-G5LCD+wKDCKcqY90BW5ZqMU1sko"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdtas8bqkvtctltag'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'233'), (b'X-Vcap-Request-Id', b'f6a57834-9ca1-41b8-5783-398231acd200'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:31,370 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:31,370 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:31,370 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:31,370 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:31,371 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:31,371 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: product_description:Tăng cường Giảm đau (ACETAMINOPHEN) AND product_type:drugs"
+  }
+}
+2026-06-21 23:55:31,372 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:31,372 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:31,675 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:31,877 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F1150>
+2026-06-21 23:55:31,878 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B4C20> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:32,283 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F0250>
+2026-06-21 23:55:32,284 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:32,285 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:32,285 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:32,286 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:32,286 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:32,568 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:31 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'148'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"94-eBdqUbQHWo6yDpWNJ89Rl3b7A6E"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdtk53ino5pgi3pe0'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'232'), (b'X-Vcap-Request-Id', b'278d4761-e464-4f23-4b9d-54006e112b7c'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:32,569 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:32,570 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:32,571 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:32,571 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:32,571 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:32,573 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: openfda.brand_name:Tăng cường Giảm đau (ACETAMINOPHEN)"
+  }
+}
+2026-06-21 23:55:32,573 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:32,573 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:32,854 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:33,069 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E41775D0>
+2026-06-21 23:55:33,070 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B5490> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:33,481 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E47857D0>
+2026-06-21 23:55:33,482 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:33,484 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:33,485 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:33,485 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:33,485 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:33,777 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:55:32 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"49ca-cV1V/X5jsbKZMwDjmUDzkMclCoU"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.generic_name%3AACETAMINOPHEN&search_after=0%3D0035a4fd-8dd5-4534-a1b5-f510d637f721>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdttf30osb9jksl70'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'230'), (b'X-Vcap-Request-Id', b'0e7b9dfb-e800-4517-7926-742fb4302458'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:33,778 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.generic_name%3AACETAMINOPHEN&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:55:33,778 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:33,789 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:33,789 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:33,790 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:33,790 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:33,790 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:34,104 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:34,105 - core.auth - DEBUG - Authentication token validated for user hash: 916b2460
+2026-06-21 23:55:34,111 - routers.drugs - DEBUG - Querying drugss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-06-21 23:55:34,117 - routers.drugs - DEBUG - Found 200 drugss
+2026-06-21 23:55:34,322 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E4794810>
+2026-06-21 23:55:34,323 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B4D40> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:34,780 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E481CA90>
+2026-06-21 23:55:34,780 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:34,781 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:34,781 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:34,781 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:34,781 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:35,363 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:34 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'161'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"a1-VQoiTQF86KKN8SHmIQyx5+vjjTQ"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdu9tu9kppcaikt7g'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'229'), (b'X-Vcap-Request-Id', b'42806333-0b4c-4e82-5ffd-939b02c96e86'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:35,364 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:35,364 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:35,364 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:35,365 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:35,365 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:35,365 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: patient.drug.openfda.brand_name:Tăng cường Giảm đau (ACETAMINOPHEN)"
+  }
+}
+2026-06-21 23:55:35,365 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:35,365 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:35,659 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:35,867 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F7B90>
+2026-06-21 23:55:35,868 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E2E0AD50> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:36,285 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F7F10>
+2026-06-21 23:55:36,286 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:36,286 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:36,288 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:36,288 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:36,288 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:36,564 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:35 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'172'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"ac-G5LCD+wKDCKcqY90BW5ZqMU1sko"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdujcfr9o8jj9hkqg'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'229'), (b'X-Vcap-Request-Id', b'8d13b42f-5097-4c21-7fc5-4ca3256520c1'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:36,566 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:36,566 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:36,566 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:36,567 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:36,567 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:36,567 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: product_description:Tăng cường Giảm đau (ACETAMINOPHEN) AND product_type:drugs"
+  }
+}
+2026-06-21 23:55:36,568 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:36,569 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:36,877 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:37,074 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F4B90>
+2026-06-21 23:55:37,074 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B55B0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:37,467 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F7450>
+2026-06-21 23:55:37,468 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:37,468 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:37,468 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:37,469 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:37,469 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:37,741 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:36 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'148'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"94-eBdqUbQHWo6yDpWNJ89Rl3b7A6E"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdusks3q4l2i3jfpg'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'228'), (b'X-Vcap-Request-Id', b'bc1404be-d1dc-47df-71b7-de6dd56eff82'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:37,741 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.brand_name%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:37,741 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:37,741 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:37,742 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:37,742 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:37,742 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: openfda.brand_name:Tăng cường Giảm đau (ACETAMINOPHEN)"
+  }
+}
+2026-06-21 23:55:37,742 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:37,743 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:37,988 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:38,229 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F7510>
+2026-06-21 23:55:38,230 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E47FDBE0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:38,701 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E48F7590>
+2026-06-21 23:55:38,701 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:38,702 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:38,702 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:38,702 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:38,703 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:39,015 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 21 Jun 2026 16:55:38 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"49ca-cV1V/X5jsbKZMwDjmUDzkMclCoU"'), (b'Link', b'<https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.generic_name%3AACETAMINOPHEN&search_after=0%3D0035a4fd-8dd5-4534-a1b5-f510d637f721>; rel="next"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdv6cerphkgmlcv7g'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'227'), (b'X-Vcap-Request-Id', b'382ba02e-360b-4e87-48ba-c345d5d573c4'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:39,016 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/label.json?limit=3&skip=0&search=openfda.generic_name%3AACETAMINOPHEN&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 200 OK"
+2026-06-21 23:55:39,016 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:39,017 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:39,017 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:39,017 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:39,018 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:39,018 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:39,307 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:39,546 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E41775D0>
+2026-06-21 23:55:39,546 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B5370> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:39,972 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E4908A10>
+2026-06-21 23:55:39,973 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:39,974 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:39,974 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:39,974 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:39,974 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:40,247 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:39 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'161'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"a1-VQoiTQF86KKN8SHmIQyx5+vjjTQ"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdvg4jjf4cuv2d800'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'225'), (b'X-Vcap-Request-Id', b'0d3f0d7e-b9ca-478e-712d-bebf8ee69352'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:40,247 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/event.json?limit=5&skip=0&search=patient.drug.openfda.brand_name%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:40,248 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:40,248 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:40,249 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:40,249 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:40,249 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: patient.drug.openfda.brand_name:Tăng cường Giảm đau (ACETAMINOPHEN)"
+  }
+}
+2026-06-21 23:55:40,251 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:40,251 - httpcore.connection - DEBUG - close.complete
+2026-06-21 23:55:40,544 - httpcore.connection - DEBUG - connect_tcp.started host='api.fda.gov' port=443 local_address=None timeout=30.0 socket_options=None
+2026-06-21 23:55:40,768 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E492E250>
+2026-06-21 23:55:40,769 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000120E48B51C0> server_hostname='api.fda.gov' timeout=30.0
+2026-06-21 23:55:41,201 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000120E492E190>
+2026-06-21 23:55:41,201 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:41,201 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-06-21 23:55:41,201 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-06-21 23:55:41,202 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-06-21 23:55:41,202 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-06-21 23:55:41,479 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sun, 21 Jun 2026 16:55:40 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'172'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Credentials', b'true'), (b'Access-Control-Allow-Origin', b'*'), (b'Age', b'0'), (b'Cache-Control', b'no-cache, no-store, must-revalidate'), (b'Content-Security-Policy', b"default-src 'none'"), (b'Etag', b'W/"ac-G5LCD+wKDCKcqY90BW5ZqMU1sko"'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Vary', b'Accept-Encoding'), (b'Via', b'https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])'), (b'X-Api-Umbrella-Request-Id', b'cutcdvpovj6s79f8pl60'), (b'X-Cache', b'MISS'), (b'X-Content-Type-Options', b'nosniff'), (b'X-Ratelimit-Limit', b'240'), (b'X-Ratelimit-Remaining', b'225'), (b'X-Vcap-Request-Id', b'2e09d563-28a6-43c4-645c-fe19127939b7'), (b'X-Xss-Protection', b'1; mode=block'), (b'X-Frame-Options', b'deny')])
+2026-06-21 23:55:41,480 - httpx - INFO - HTTP Request: GET https://api.fda.gov/drug/enforcement.json?limit=5&skip=0&search=product_description%3AT%C4%83ng+c%C6%B0%E1%BB%9Dng+Gi%E1%BA%A3m+%C4%91au+%28ACETAMINOPHEN%29&api_key=cYzhzoHiQdDiwxC3w3smJ5Fp5rlpKudgLVvgrkQ9 "HTTP/1.1 400 Bad Request"
+2026-06-21 23:55:41,480 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-06-21 23:55:41,480 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-06-21 23:55:41,480 - httpcore.http11 - DEBUG - response_closed.started
+2026-06-21 23:55:41,480 - httpcore.http11 - DEBUG - response_closed.complete
+2026-06-21 23:55:41,481 - services.openfda - ERROR - openFDA HTTP error: 400 - {
+  "error": {
+    "code": "BAD_REQUEST",
+    "message": "Search not supported: product_description:Tăng cường Giảm đau (ACETAMINOPHEN) AND product_type:drugs"
+  }
+}
+2026-06-21 23:55:41,481 - httpcore.connection - DEBUG - close.started
+2026-06-21 23:55:41,481 - httpcore.connection - DEBUG - close.complete
