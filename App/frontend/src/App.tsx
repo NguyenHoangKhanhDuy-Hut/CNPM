@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from '@/contexts/AuthContext';
 import ProtectedAdminRoute from '@/components/ProtectedAdminRoute';
 import ProtectedRoute from '@/components/ProtectedRoute';
+import ChatBot from '@/components/ChatBot';
 import Index from './pages/Index';
 import SearchPage from './pages/SearchPage';
 import PredictPage from './pages/PredictPage';
@@ -42,6 +43,7 @@ const App = () => (
         <BrowserRouter>
           <AuthProvider>
             <AppRoutes />
+            <ChatBot />
           </AuthProvider>
         </BrowserRouter>
       </TooltipProvider>

@@ -13,7 +13,6 @@ const PredictPage = () => {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<any>(null);
   const [error, setError] = useState('');
-
   useEffect(() => {
     const initialSymptoms = searchParams.get('symptoms');
     const initialName = searchParams.get('name');
@@ -53,6 +52,8 @@ const PredictPage = () => {
       setLoading(false);
     }
   };
+
+  const otherPredictions = result?.predictions?.slice(1) || [];
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -102,13 +103,16 @@ const PredictPage = () => {
         {/* Result */}
         {result && (
           <>
-            {/* AI Result Card */}
+            {/* Primary Prediction */}
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 text-white mb-6">
               <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                 <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl flex-shrink-0">
                   {result.icon}
                 </div>
                 <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="bg-blue-500 text-white text-xs font-semibold px-2 py-0.5 rounded">Kết quả chính</span>
+                  </div>
                   <div className="flex flex-wrap items-center gap-3 mb-2">
                     <h2 className="text-2xl font-bold">{result.disease_name}</h2>
                     <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -142,13 +146,64 @@ const PredictPage = () => {
               </Link>
             </div>
 
-            {/* Suggested Drugs */}
+            {/* Suggested Drugs for Primary */}
             {result.suggested_drugs && result.suggested_drugs.length > 0 && (
               <div className="mb-6">
-                <h3 className="font-semibold text-slate-900 mb-4">Thuốc gợi ý ({result.suggested_drugs.length})</h3>
+                <h3 className="font-semibold text-slate-900 mb-4">Thuốc gợi ý cho {result.disease_name} ({result.suggested_drugs.length})</h3>
                 <div className="grid sm:grid-cols-2 gap-5">
                   {result.suggested_drugs.map((drug: any) => (
                     <DrugCard key={drug.id} drug={drug} />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Other Predictions - always visible */}
+            {otherPredictions.length > 0 && (
+              <div className="mb-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <h3 className="font-semibold text-slate-900">Các dự đoán khác</h3>
+                  <span className="text-xs text-slate-400">({otherPredictions.length})</span>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {otherPredictions.map((pred: any, idx: number) => (
+                    <div key={pred.disease_id} className="bg-white rounded-2xl border border-slate-200 p-4 hover:shadow-md transition-shadow">
+                      <div className="flex items-start gap-3">
+                        <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                          {pred.icon}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1">
+                            <h4 className="font-bold text-slate-900 text-sm truncate">{pred.disease_name}</h4>
+                            <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
+                              pred.accuracy_score >= 80 ? 'bg-green-50 text-green-700' :
+                              pred.accuracy_score >= 60 ? 'bg-amber-50 text-amber-700' :
+                              'bg-slate-50 text-slate-500'
+                            }`}>
+                              {pred.accuracy_score}%
+                            </span>
+                          </div>
+                          <p className="text-xs text-slate-500 line-clamp-2">{pred.description}</p>
+                          {pred.ai_explanation && (
+                            <p className="text-xs text-slate-400 mt-1 italic line-clamp-1">{pred.ai_explanation}</p>
+                          )}
+                          <div className="mt-2 flex items-center gap-2">
+                            <Link
+                              to={`/disease/${pred.disease_id}`}
+                              className="text-xs text-blue-600 hover:underline font-medium"
+                            >
+                              Xem chi tiết
+                            </Link>
+                            <span className="text-xs text-slate-300">|</span>
+                            <span className={`text-xs font-medium ${
+                              pred.risk_level === 'Cao' ? 'text-red-500' : pred.risk_level === 'Trung bình' ? 'text-amber-500' : 'text-emerald-500'
+                            }`}>
+                              {pred.risk_level}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
