@@ -347,3 +347,6 @@ CHỈ trả về JSON array, không có text khác."""
         ai_explanation=top["ai_explanation"],
         predictions=result_predictions,
     )
+
+
+\\note
