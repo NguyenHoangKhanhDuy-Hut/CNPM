@@ -47,10 +47,10 @@ const AccountPage = () => {
     fetchSavedDrugs();
   }, []);
 
-  const handleUnsave = async (drugId: number) => {
+  const handleUnsave = async (drugName: string) => {
     try {
-      await api.delete(`/api/v1/user/saved-drugs/${drugId}`);
-      setSavedDrugs((prev) => prev.filter((item) => item.drug_id !== drugId));
+      await api.delete(`/api/v1/user/saved-drugs/${encodeURIComponent(drugName)}`);
+      setSavedDrugs((prev) => prev.filter((item) => item.drug_name !== drugName));
     } catch {
       console.error('Failed to unsave drug');
     }
@@ -185,13 +185,13 @@ const AccountPage = () => {
                   {savedDrugs.map((item) => (
                     <div key={item.id} className="flex items-center justify-between py-2 border-b border-slate-100 last:border-0">
                       <Link
-                        to={`/drug/${item.drug_id}`}
+                        to={`/drug/${encodeURIComponent(item.drug_name)}`}
                         className="text-sm font-medium text-blue-600 hover:underline"
                       >
-                        {item.drug_name || `Thuốc #${item.drug_id}`}
+                        {item.drug_name}
                       </Link>
                       <button
-                        onClick={() => handleUnsave(item.drug_id)}
+                        onClick={() => handleUnsave(item.drug_name)}
                         className="text-slate-400 hover:text-red-500 transition-colors"
                       >
                         <Trash2 className="h-4 w-4" />

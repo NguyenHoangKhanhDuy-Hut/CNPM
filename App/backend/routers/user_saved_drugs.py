@@ -10,7 +10,6 @@ from sqlalchemy.orm import Session
 from core.database import get_db
 from dependencies.auth import get_current_user
 from models.user_saved_drugs import UserSavedDrug
-from models.drugs import Drugs
 from schemas.auth import UserResponse
 
 logger = logging.getLogger(__name__)
@@ -20,8 +19,7 @@ router = APIRouter(prefix="/api/v1/user", tags=["user-saved-drugs"])
 
 class SavedDrugResponse(BaseModel):
     id: int
-    drug_id: int
-    drug_name: Optional[str] = None
+    drug_name: str
     saved_at: Optional[str] = None
 
     class Config:
@@ -54,7 +52,6 @@ def list_saved_drugs(
     def to_response(item: UserSavedDrug) -> SavedDrugResponse:
         return SavedDrugResponse(
             id=item.id,
-            drug_id=item.drug_id,
             drug_name=item.drug_name,
             saved_at=item.saved_at.isoformat() if item.saved_at else None,
         )
@@ -65,20 +62,16 @@ def list_saved_drugs(
     )
 
 
-@router.post("/saved-drugs/{drug_id}", response_model=SaveStatusResponse)
+@router.post("/saved-drugs/{drug_name:path}", response_model=SaveStatusResponse)
 def save_drug(
-    drug_id: int,
+    drug_name: str,
     current_user: UserResponse = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
-    drug = db.execute(select(Drugs).where(Drugs.id == drug_id)).scalar_one_or_none()
-    if not drug:
-        raise HTTPException(status_code=404, detail="Drug not found")
-
     existing = db.execute(
         select(UserSavedDrug).where(
             UserSavedDrug.user_id == current_user.id,
-            UserSavedDrug.drug_id == drug_id,
+            UserSavedDrug.drug_name == drug_name,
         )
     ).scalar_one_or_none()
 
@@ -87,8 +80,7 @@ def save_drug(
 
     saved = UserSavedDrug(
         user_id=current_user.id,
-        drug_id=drug_id,
-        drug_name=drug.name,
+        drug_name=drug_name,
     )
     db.add(saved)
     db.commit()
@@ -96,16 +88,16 @@ def save_drug(
     return SaveStatusResponse(saved=True, message="Drug saved successfully")
 
 
-@router.delete("/saved-drugs/{drug_id}", response_model=SaveStatusResponse)
+@router.delete("/saved-drugs/{drug_name:path}", response_model=SaveStatusResponse)
 def unsave_drug(
-    drug_id: int,
+    drug_name: str,
     current_user: UserResponse = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
     result = db.execute(
         delete(UserSavedDrug).where(
             UserSavedDrug.user_id == current_user.id,
-            UserSavedDrug.drug_id == drug_id,
+            UserSavedDrug.drug_name == drug_name,
         )
     )
 
